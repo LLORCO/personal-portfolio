@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fafaf9;
+  background-image: radial-gradient(1200px 600px at 85% -10%, rgba(16, 185, 129, 0.06), transparent 55%);
+  background-attachment: fixed;
+}
+
+html.dark body {
+  background-color: #0c0a09;
+  background-image: radial-gradient(1200px 600px at 85% -10%, rgba(16, 185, 129, 0.1), transparent 55%);
+}
+
+/* Marquee continuo (debajo del hero). translateX(-50%) = una copia del contenido duplicado. */
+@keyframes portfolio-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.portfolio-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: portfolio-marquee 32s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-marquee__track {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

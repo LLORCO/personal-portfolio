@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+.env
+.env.*
+*.log
+profile/github-export
+.cursor
+__pycache__
+*.pyc
