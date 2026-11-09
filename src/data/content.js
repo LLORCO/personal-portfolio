@@ -312,6 +312,12 @@ export const content = {
         { label: "Detalle", value: "Pixel" },
       ],
     },
+    cv: {
+      label: "Descargar CV",
+      ariaLabel: "Descargar CV en español (PDF)",
+      altLabel: "También en inglés",
+      altAriaLabel: "También en inglés: descargar CV en inglés (PDF)",
+    },
     about: {
       eyebrow: "About",
       title: "Diseño, código y criterio para quien lo usa",
@@ -396,6 +402,12 @@ export const content = {
         { label: "Scope", value: "Ecommerce" },
         { label: "Craft", value: "Pixel" },
       ],
+    },
+    cv: {
+      label: "Download CV",
+      ariaLabel: "Download CV in English (PDF)",
+      altLabel: "Also in Spanish",
+      altAriaLabel: "Also in Spanish: download CV in Spanish (PDF)",
     },
     about: {
       eyebrow: "About",
