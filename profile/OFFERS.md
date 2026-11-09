@@ -17,7 +17,7 @@
 
 | Rol | Encaje |
 |---|---|
-| Senior Frontend Developer | ★★★★★ |
+| Frontend Developer | ★★★★★ |
 | Full Stack Developer | ★★★★★ |
 | Hybrid Design-Dev / UI Engineer | ★★★★★ |
 | Shopify Developer | ★★★★★ |
@@ -102,7 +102,7 @@ I'm currently working with teams and clients, and open to challenging projects a
 
 | Propuesta | Descripción |
 |---|---|
-| **REST APIs** | Diseño e implementación con Java/Spring Boot o Python |
+| **REST APIs** | Diseño e implementación con Python |
 | **Integraciones third-party** | CRMs, ERPs, payment gateways, shipping, marketing tools |
 | **Automatización de datos** | Scripts de migración, sync, ETL ligero (CSV, APIs, webhooks) |
 | **Database & SQL** | Consultas, modelado, mantenimiento de datos de producto/catálogo |
@@ -114,7 +114,6 @@ I'm currently working with teams and clients, and open to challenging projects a
 
 | Propuesta | Descripción |
 |---|---|
-| **IA en flujos de trabajo** | Integrar LLMs en procesos internos — soporte, contenido, clasificación |
 | **Automatización con IA** | Reducir trabajo manual en equipos de negocio u operaciones |
 | **Tooling para developers** | Scripts, prompts, pipelines que aceleran entregas sin perder calidad |
 | **Evaluación de herramientas IA** | Qué adoptar, cómo integrarlo, qué evitar |
@@ -178,7 +177,7 @@ Ecommerce Shopify · Landings · Integraciones · Metafields · SEO
 Accesibilidad WCAG · Performance · Auditorías · Fidelidad al diseño
 
 ### Escala & operaciones
-APIs · CRM/ERP · Automatización · IA en flujos · Migración de datos
+APIs · CRM/ERP · Automatización · Migración de datos
 
 ---
 

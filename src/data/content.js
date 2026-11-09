@@ -133,12 +133,12 @@ const skillGroupsEs = [
   {
     id: "backend",
     label: "Backend",
-    items: ["Java", "Spring Boot", "Python", "REST", "SQL"],
+    items: ["Python", "REST", "SQL"],
   },
   {
     id: "plus",
     label: "Plus",
-    items: ["IA en flujos", "Git", "PM web", "Community building"],
+    items: ["Git", "PM web", "Community building"],
   },
 ];
 
@@ -161,12 +161,12 @@ const skillGroupsEn = [
   {
     id: "backend",
     label: "Backend",
-    items: ["Java", "Spring Boot", "Python", "REST", "SQL"],
+    items: ["Python", "REST", "SQL"],
   },
   {
     id: "plus",
     label: "Plus",
-    items: ["AI workflows", "Git", "Web PM", "Community building"],
+    items: ["Git", "Web PM", "Community building"],
   },
 ];
 
@@ -197,10 +197,9 @@ const servicesColumnsEs = [
     id: "scale",
     title: "Escala & operaciones",
     items: [
-      "REST APIs (Java/Spring Boot, Python)",
+      "REST APIs (Python)",
       "Conectividad CRM / ERP con web y ecommerce",
       "Automatización de datos y scripts de migración",
-      "IA integrada en flujos de trabajo empresariales",
       "Ownership de proyectos y PM de entregas web",
     ],
   },
@@ -233,10 +232,9 @@ const servicesColumnsEn = [
     id: "scale",
     title: "Scale & operations",
     items: [
-      "REST APIs (Java/Spring Boot, Python)",
+      "REST APIs (Python)",
       "CRM / ERP connectivity with web & ecommerce",
       "Data automation & migration scripts",
-      "AI integrated into business workflows",
       "Project ownership & web delivery PM",
     ],
   },
@@ -286,8 +284,8 @@ const communityCardsEn = [
   },
 ];
 
-const roleChipsEs = ["Senior Frontend", "Full Stack", "Design-Dev", "Shopify Developer"];
-const roleChipsEn = ["Senior Frontend", "Full Stack", "Design-Dev", "Shopify Developer"];
+const roleChipsEs = ["Frontend", "Full Stack", "Design-Dev", "Shopify Developer"];
+const roleChipsEn = ["Frontend", "Full Stack", "Design-Dev", "Shopify Developer"];
 
 export const content = {
   es: {

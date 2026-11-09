@@ -9,15 +9,15 @@
 
 - **96 pull requests** (85 mergeados)
 - **323+ commits** en repos activos (muestra exportada)
-- Repos principales: Progress Labs (Shopify/Liquid), PyDay México, proyectos personales
+- Repos principales: Shopify/Liquid, PyDay México, proyectos personales
 
 ---
 
-## Trabajo profesional — Progress Labs (confirmado)
+## Trabajo profesional (confirmado)
 
 Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend · ownership de entregas en themes.
 
-### 1. Savory Spice — `progress-labs/savory-spice` ⭐ Proyecto bandera
+### 1. Savory Spice ⭐ Proyecto bandera
 
 **Cliente:** [Savory Spice Shop](https://www.savoryspiceshop.com) — tienda ecommerce de especias y condimentos en USA.
 
@@ -69,7 +69,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ---
 
-### 2. Leaf Shave — `progress-labs/leaf-shave-new`
+### 2. Leaf Shave
 
 **Qué hice:**
 
@@ -93,7 +93,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ---
 
-### 3. FIGS Landing — `progress-labs/figs-landing`
+### 3. FIGS Landing
 
 **Qué hice:**
 
@@ -115,7 +115,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ---
 
-### 4. Polly Wales — `progress-labs/polly-wales`
+### 4. Polly Wales
 
 **Qué hice:**
 
@@ -243,11 +243,11 @@ SEO · Accesibilidad WCAG/ADA · Auditorías · Performance · Semantic HTML · 
 
 ### Backend & integraciones
 
-Java · Spring Boot · Python · REST APIs · SQL
+Python · REST APIs · SQL
 
 ### Procesos & liderazgo
 
-Ownership de proyectos · PM ligero · Git · CI/CD basics · IA en flujos de trabajo
+Ownership de proyectos · PM ligero · Git · CI/CD basics
 
 ### Comunidad
 
@@ -265,7 +265,7 @@ Organización de meetups · Charlas técnicas · Call for speakers · Community 
 
 - **Servicios:** catálogo completo en `profile/OFFERS.md` (Shopify, a11y, landings, CRM/ERP, IA, APIs, etc.)
 - **Freelance:** proyectos cortos y largos
-- **Roles empleo:** senior frontend · fullstack · hybrid design-dev · shopify dev
+- **Roles empleo:** frontend · fullstack · hybrid design-dev · shopify dev
 - **Empresa:** agencia · startup · remoto preferido (abierto a presencial)
 - **Restricciones:** ninguna declarada — abierto a retos alineados
 - **Disponibilidad:** "Abierto a nuevas oportunidades" + tono retador sin urgencia

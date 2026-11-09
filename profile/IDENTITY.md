@@ -35,7 +35,6 @@ No rechazo etiquetas — más bien no encajo en una sola.
 - Mantener interfaces fieles al diseño, responsivas y creativas
 - Integrar APIs y aplicaciones third party
 - Optimizar SEO y auditar accesibilidad (ADA/WCAG) — áreas que equipos suelen pasar por alto
-- Integrar IA en flujos de trabajo empresariales
 
 **Frase núcleo:**
 
@@ -58,8 +57,7 @@ No rechazo etiquetas — más bien no encajo en una sola.
 2. **Accesibilidad como valor de negocio** — WCAG/ADA en producción, no solo en checklist
 3. **UX dual:** quien usa la interfaz y quien la opera (ej. scoreboards, invitaciones)
 4. **Ownership de punta a punta** — negocio, diseño, implementación y optimización
-5. **IA aplicada a flujos reales** — integraciones y productividad empresarial
-6. **Community building** — PyTalavera, PyDay México, ecosistema tech de Puebla
+5. **Community building** — PyTalavera, PyDay México, ecosistema tech de Puebla
 
 ## Objetivo del portfolio
 
@@ -108,7 +106,7 @@ Soy Jorge, desarrollador full stack con mentalidad de diseño. Construyo experie
 
 ## Roles que encajan (empleo)
 
-- Senior Frontend Developer
+- Frontend Developer
 - Full Stack Developer
 - Hybrid Design-Dev / UI Engineer
 - Shopify Developer

@@ -66,16 +66,15 @@ Como colaborador o como partner en proyecto — desde ecommerce y accesibilidad 
 
 ### Columna 3 — Escala & operaciones
 
-- REST APIs (Java/Spring Boot, Python)
+- REST APIs (Python)
 - Conectividad CRM / ERP con web y ecommerce
 - Automatización de datos y scripts de migración
-- IA integrada en flujos de trabajo empresariales
 - Ownership de proyectos y PM de entregas web
 
 **Footer de sección (ES):**  
 Proyectos puntuales o colaboraciones a largo plazo — remoto, presencial o híbrido.
 
-**Roles (chips):** Senior Frontend · Full Stack · Design-Dev · Shopify Developer
+**Roles (chips):** Frontend · Full Stack · Design-Dev · Shopify Developer
 
 ---
 
@@ -153,8 +152,8 @@ Invitación web y scoreboard de torneos: interfaces pensadas tanto para quien la
 **Frontend:** React · Tailwind · JavaScript · Responsive · Fidelidad al diseño  
 **Ecommerce:** Shopify · Liquid · Metafields · PDP · Integraciones  
 **Calidad:** WCAG/ADA · SEO · Semantic HTML · ARIA · Auditorías  
-**Backend:** Java · Spring Boot · Python · REST · SQL  
-**Plus:** IA en flujos de trabajo · Git · PM de proyectos web · Community building
+**Backend:** Python · REST · SQL  
+**Plus:** Git · PM de proyectos web · Community building
 
 ---
 
