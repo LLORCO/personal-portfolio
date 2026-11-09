@@ -4,6 +4,7 @@
 - Strong value proposition headline.
 - Positioning statement: frontend + design + technical depth.
 - Supporting value card with 3 differentiators.
+- Primary "Download CV" action with a secondary link to the other language version.
 - Floating but clean top navigation with single CTA.
 
 ## 2) About
@@ -32,4 +33,5 @@
 - Clear conversion-oriented CTA.
 - Role availability + freelance fit.
 - Primary contact plus professional links.
+- "Download CV" link mirroring the hero action.
 
