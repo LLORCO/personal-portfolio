@@ -1,0 +1,24 @@
+{
+  "name": "Jorge Hernández",
+  "short_name": "Jorge Hernández",
+  "description": "Portfolio de Jorge Hernández: full stack frontend, Shopify ecommerce, accesibilidad WCAG y community builder en Puebla, México.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#047857",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -197,7 +197,7 @@ const servicesColumnsEs = [
     id: "scale",
     title: "Escala & operaciones",
     items: [
-      "REST APIs (Java/Spring Boot, Python)",
+      "REST APIs (Python)",
       "Conectividad CRM / ERP con web y ecommerce",
       "Automatización de datos y scripts de migración",
       "Ownership de proyectos y PM de entregas web",
@@ -232,7 +232,7 @@ const servicesColumnsEn = [
     id: "scale",
     title: "Scale & operations",
     items: [
-      "REST APIs (Java/Spring Boot, Python)",
+      "REST APIs (Python)",
       "CRM / ERP connectivity with web & ecommerce",
       "Data automation & migration scripts",
       "Project ownership & web delivery PM",

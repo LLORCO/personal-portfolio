@@ -66,7 +66,7 @@ Como colaborador o como partner en proyecto — desde ecommerce y accesibilidad 
 
 ### Columna 3 — Escala & operaciones
 
-- REST APIs (Java/Spring Boot, Python)
+- REST APIs (Python)
 - Conectividad CRM / ERP con web y ecommerce
 - Automatización de datos y scripts de migración
 - Ownership de proyectos y PM de entregas web

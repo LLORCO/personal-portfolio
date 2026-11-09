@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="JH">
-  <defs>
-    <linearGradient id="jh-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#059669" />
-      <stop offset="0.55" stop-color="#047857" />
-      <stop offset="1" stop-color="#052e16" />
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="14" fill="url(#jh-bg)" />
-  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#34d399" stroke-opacity="0.5" stroke-width="3" />
-  <g fill="#ffffff">
-    <path d="M24 15v21a11 11 0 0 1-11 11h-3v-7h3a4 4 0 0 0 4-4V15Z" />
-    <path d="M30 15h7v12.5h10V15h7v32h-7V34.5H37V47h-7Z" />
-  </g>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="10" fill="white"/>
+<circle cx="36" cy="10" r="5.5" stroke="black" stroke-width="5"/>
+<circle cx="25" cy="10" r="5.5" stroke="black" stroke-width="5"/>
+<circle cx="29.5" cy="31.5" r="12" stroke="black" stroke-width="5"/>
+<circle cx="18.5" cy="31.5" r="12" fill="#F5F5F5" stroke="black" stroke-width="5"/>
+<rect x="17" y="8" width="5" height="24" rx="2.5" fill="black"/>
+<rect x="29" y="10" width="4" height="22" fill="black"/>
+<rect x="19" y="42" width="12" height="4" fill="black"/>
+<rect x="39" y="10" width="5" height="22" fill="black"/>
+<rect x="22" y="10" width="6" height="21" fill="white"/>
+<rect x="33" y="10" width="6" height="21" fill="white"/>
+<rect x="28" y="21" width="7" height="7" fill="white"/>
 </svg>
