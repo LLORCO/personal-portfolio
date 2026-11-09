@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="JH">
+  <defs>
+    <linearGradient id="jh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059669" />
+      <stop offset="0.55" stop-color="#047857" />
+      <stop offset="1" stop-color="#052e16" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#jh-bg)" />
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#34d399" stroke-opacity="0.5" stroke-width="3" />
+  <g fill="#ffffff">
+    <path d="M24 15v21a11 11 0 0 1-11 11h-3v-7h3a4 4 0 0 0 4-4V15Z" />
+    <path d="M30 15h7v12.5h10V15h7v32h-7V34.5H37V47h-7Z" />
+  </g>
+</svg>

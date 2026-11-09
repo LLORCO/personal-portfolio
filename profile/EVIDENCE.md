@@ -9,15 +9,15 @@
 
 - **96 pull requests** (85 mergeados)
 - **323+ commits** en repos activos (muestra exportada)
-- Repos principales: Progress Labs (Shopify/Liquid), PyDay México, proyectos personales
+- Repos principales: Shopify/Liquid, PyDay México, proyectos personales
 
 ---
 
-## Trabajo profesional — Progress Labs (confirmado)
+## Trabajo profesional (confirmado)
 
 Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend · ownership de entregas en themes.
 
-### 1. Savory Spice — `progress-labs/savory-spice` ⭐ Proyecto bandera
+### 1. Savory Spice ⭐ Proyecto bandera
 
 **Cliente:** [Savory Spice Shop](https://www.savoryspiceshop.com) — tienda ecommerce de especias y condimentos en USA.
 
@@ -31,7 +31,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 - Trabajo conjunto con diseño para traducir el refresh de marca a código en producción
 - Secciones completas custom — no solo tweaks: bloques nuevos, layouts modulares, consistencia visual en todo el theme
-- Criterio pixel-perfect entre Figma y Liquid en un catálogo que no perdona inconsistencias
+- Criterio de fidelidad al diseño entre Figma y Liquid en un catálogo que no perdona inconsistencias
 
 **Interfaces & componentes custom**
 
@@ -69,7 +69,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ---
 
-### 2. Leaf Shave — `progress-labs/leaf-shave-new`
+### 2. Leaf Shave
 
 **Qué hice:**
 
@@ -93,18 +93,18 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ---
 
-### 3. FIGS Landing — `progress-labs/figs-landing`
+### 3. FIGS Landing
 
 **Qué hice:**
 
-- **37 PRs mergeados** — landing corporativa/narrativa
+- **36 PRs mergeados** — landing corporativa/narrativa
 - Nav sticky, tabs, carousels, cards con transform, animaciones sincronizadas
 - Fixes mobile extensivos (carousel, tabs, border radius, pillars)
 - Tipografía, parallax, secciones Product / People / Purpose / Impact
 
 **Impacto / valor:**
 
-- Ejecución pixel-perfect en marketing site de alto detalle visual
+- Ejecución fiel al diseño en marketing site de alto detalle visual
 - Equilibrio entre creatividad y comportamiento responsive impecable
 
 **Stack:** HTML/CSS/JS (landing custom)
@@ -115,7 +115,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ---
 
-### 4. Polly Wales — `progress-labs/polly-wales`
+### 4. Polly Wales
 
 **Qué hice:**
 
@@ -222,7 +222,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 1. **Savory Spice** — Case study bandera: refresh de marca + secciones custom + carousels + store locator + páginas automatizadas + metafields a escala
 2. **Leaf Shave** — Accesibilidad WCAG en Shopify (diferenciador)
-3. **FIGS Landing** — Creative dev + pixel-perfect
+3. **FIGS Landing** — Creative dev + fidelidad al diseño
 4. **Scoreboard / Invitación** — UX para operadores y usuarios (card combinada o dos cards más pequeñas)
 
 ---
@@ -231,7 +231,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ### Frontend & UI
 
-React · JavaScript · Tailwind CSS · Responsive design · Pixel-perfect implementation · Microinteracciones
+React · JavaScript · Tailwind CSS · Responsive design · Implementación fiel al diseño · Microinteracciones
 
 ### Ecommerce
 
@@ -247,7 +247,7 @@ Java · Spring Boot · Python · REST APIs · SQL
 
 ### Procesos & liderazgo
 
-Ownership de proyectos · PM ligero · Git · CI/CD basics · IA en flujos de trabajo
+Ownership de proyectos · PM ligero · Git · CI/CD basics
 
 ### Comunidad
 
@@ -265,7 +265,7 @@ Organización de meetups · Charlas técnicas · Call for speakers · Community 
 
 - **Servicios:** catálogo completo en `profile/OFFERS.md` (Shopify, a11y, landings, CRM/ERP, IA, APIs, etc.)
 - **Freelance:** proyectos cortos y largos
-- **Roles empleo:** senior frontend · fullstack · hybrid design-dev · shopify dev
+- **Roles empleo:** frontend · fullstack · hybrid design-dev · shopify dev
 - **Empresa:** agencia · startup · remoto preferido (abierto a presencial)
 - **Restricciones:** ninguna declarada — abierto a retos alineados
 - **Disponibilidad:** "Abierto a nuevas oportunidades" + tono retador sin urgencia

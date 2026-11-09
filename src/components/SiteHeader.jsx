@@ -21,7 +21,7 @@ export default function SiteHeader() {
             <p className="truncate font-heading text-base font-semibold tracking-tight text-stone-900 dark:text-stone-50 sm:text-lg">
               {personal.fullName}
             </p>
-            <p className="truncate font-heading text-[10px] font-medium uppercase tracking-[0.16em] text-stone-500 dark:text-stone-400 sm:text-[11px] sm:tracking-[0.18em]">
+            <p className="truncate font-heading text-[10px] font-medium uppercase tracking-[0.16em] text-stone-600 dark:text-stone-400 sm:text-[11px] sm:tracking-[0.18em]">
               {personal.tagline}
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function SiteHeader() {
           <ThemeToggle />
           <a
             href="#contact"
-            className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-accent-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600 sm:px-4 sm:py-2.5"
+            className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-accent-700 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-accent-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-700 dark:bg-accent-400 dark:text-stone-950 dark:hover:bg-accent-300 dark:focus-visible:outline-accent-400 sm:px-4 sm:py-2.5"
           >
             {header.contact}
             <ArrowUpRight size={16} aria-hidden="true" />

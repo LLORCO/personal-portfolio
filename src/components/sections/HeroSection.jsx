@@ -33,7 +33,7 @@ export default function HeroSection() {
       </div>
 
       <div className="flex min-w-0 flex-col gap-4 lg:col-span-5">
-        <div className="rounded-2xl border border-emerald-700/30 bg-gradient-to-br from-accent-600 via-accent-600 to-moss-900 p-6 text-white shadow-md dark:border-emerald-600/40">
+        <div className="rounded-2xl border border-emerald-700/30 bg-gradient-to-br from-accent-700 via-accent-700 to-moss-900 p-6 text-white shadow-md dark:border-emerald-600/40">
           <p className="font-heading text-4xl font-black leading-none sm:text-5xl">UI</p>
           <p className="mt-2 font-heading text-4xl font-black leading-none sm:text-5xl">UX</p>
           <p className="mt-2 font-heading text-4xl font-black leading-none sm:text-5xl">DEV</p>
@@ -45,7 +45,7 @@ export default function HeroSection() {
               key={s.label}
               className="flex flex-col rounded-xl border border-stone-300 bg-white p-3 shadow-sm dark:border-stone-600 dark:bg-stone-900 sm:p-4"
             >
-              <p className="text-[10px] font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400 sm:text-xs">
+              <p className="text-[10px] font-semibold uppercase tracking-wide text-stone-600 dark:text-stone-400 sm:text-xs">
                 {s.label}
               </p>
               <p className="mt-1 font-heading text-base font-bold text-moss-900 dark:text-mint-200 sm:text-lg">{s.value}</p>

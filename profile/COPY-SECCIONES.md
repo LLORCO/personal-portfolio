@@ -51,7 +51,7 @@ Como colaborador o como partner en proyecto — desde ecommerce y accesibilidad 
 ### Columna 1 — Negocio digital
 
 - Desarrollo y customización de themes Shopify
-- Landings y storefronts pixel-perfect
+- Landings y storefronts fieles al diseño
 - Metafields, metaobjects y migración de catálogos a escala
 - Integraciones con apps, CRMs y APIs third-party
 - SEO técnico y optimización de performance
@@ -69,13 +69,12 @@ Como colaborador o como partner en proyecto — desde ecommerce y accesibilidad 
 - REST APIs (Java/Spring Boot, Python)
 - Conectividad CRM / ERP con web y ecommerce
 - Automatización de datos y scripts de migración
-- IA integrada en flujos de trabajo empresariales
 - Ownership de proyectos y PM de entregas web
 
 **Footer de sección (ES):**  
 Proyectos puntuales o colaboraciones a largo plazo — remoto, presencial o híbrido.
 
-**Roles (chips):** Senior Frontend · Full Stack · Design-Dev · Shopify Developer
+**Roles (chips):** Frontend · Full Stack · Design-Dev · Shopify Developer
 
 ---
 
@@ -94,7 +93,7 @@ No encajo en una sola etiqueta: soy full stack con tendencia a frontend, creativ
 
 **Pilares:**
 
-1. Calidad visual consistente — pixel-perfect y responsivo en producción
+1. Calidad visual consistente — fiel al diseño y responsivo en producción
 2. Accesibilidad que importa — WCAG/ADA en ecommerce real, no solo en teoría
 3. Procesos que escalan — metafields, integraciones y optimización continua
 
@@ -133,10 +132,10 @@ Serie de mejoras WCAG/ADA en theme Shopify: cart live regions, jerarquía de hea
 ### 3. FIGS Landing — Creative dev
 
 **Description (ES):**  
-Landing corporativa con nav sticky, carousels, cards animadas y docena de fixes mobile. Creatividad visual con ejecución pixel-perfect.
+Landing corporativa con nav sticky, carousels, cards animadas y docena de fixes mobile. Creatividad visual con ejecución fiel al diseño.
 
 **Stack:** HTML · CSS · JavaScript  
-**Impact:** 37 PRs mergeados — detalle en cada breakpoint
+**Impact:** 36 PRs mergeados — detalle en cada breakpoint
 
 ### 4. Side projects — UX para operadores
 
@@ -150,11 +149,11 @@ Invitación web y scoreboard de torneos: interfaces pensadas tanto para quien la
 
 ## Skills
 
-**Frontend:** React · Tailwind · JavaScript · Responsive · Pixel-perfect  
+**Frontend:** React · Tailwind · JavaScript · Responsive · Fidelidad al diseño  
 **Ecommerce:** Shopify · Liquid · Metafields · PDP · Integraciones  
 **Calidad:** WCAG/ADA · SEO · Semantic HTML · ARIA · Auditorías  
 **Backend:** Java · Spring Boot · Python · REST · SQL  
-**Plus:** IA en flujos de trabajo · Git · PM de proyectos web · Community building
+**Plus:** Git · PM de proyectos web · Community building
 
 ---
 

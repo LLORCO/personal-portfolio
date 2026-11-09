@@ -22,7 +22,7 @@ export default function SkillsSection() {
           const Icon = icons[id] || Cpu;
           return (
             <article key={id} className="rounded-2xl border border-stone-300 bg-white p-6 shadow-sm dark:border-stone-600 dark:bg-stone-900">
-              <div className="mb-4 inline-flex rounded-lg bg-accent-600 p-2.5 text-white shadow-sm">
+              <div className="mb-4 inline-flex rounded-lg bg-accent-700 p-2.5 text-white shadow-sm">
                 <Icon size={18} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-xl font-semibold text-stone-900 dark:text-stone-50">{label}</h3>
