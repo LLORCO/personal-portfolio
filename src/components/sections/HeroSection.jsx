@@ -1,5 +1,6 @@
 import { Figma, Layers3, ServerCog, Sparkles } from "lucide-react";
 import { useContent } from "../../hooks/useContent";
+import DownloadCvButton from "../DownloadCvButton";
 
 export default function HeroSection() {
   const { hero, availability, personal } = useContent();
@@ -28,6 +29,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <p className="max-w-xl text-lg leading-relaxed text-stone-600 dark:text-stone-400 lg:text-xl">{hero.intro}</p>
+        <DownloadCvButton variant="hero" className="w-full sm:w-auto" />
       </div>
 
       <div className="flex min-w-0 flex-col gap-4 lg:col-span-5">
