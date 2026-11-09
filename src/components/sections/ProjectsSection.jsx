@@ -1,78 +1,131 @@
-import { ArrowUpRight, Star } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useContent } from "../../hooks/useContent";
-import SectionTitle from "../ui/SectionTitle";
+import { btnPrimary, btnSecondary, textLink } from "../ui/buttons";
+import MediaSlot from "../ui/MediaSlot";
+
+const sectionClass =
+  "scroll-mt-24 border-t border-stone-200 py-14 dark:border-stone-800 sm:py-20";
+const h2Class =
+  "font-heading text-3xl font-bold tracking-[-0.02em] text-stone-950 dark:text-stone-50 sm:text-4xl";
+const h3Class =
+  "font-heading text-2xl font-bold leading-tight tracking-[-0.02em] text-stone-950 dark:text-stone-50 sm:text-3xl";
+const cardClass =
+  "grid gap-10 rounded-2xl border border-stone-300 bg-white p-6 dark:border-stone-700 dark:bg-stone-900 sm:p-10 lg:grid-cols-12";
+
+function ExternalSiteLink({ href, children, newTab, className }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      {children}
+      <span className="sr-only">{newTab}</span>
+    </a>
+  );
+}
+
+function FeatureCard({ project, newTab }) {
+  return (
+    <article id={project.id} className={`mt-10 ${cardClass}`}>
+      <MediaSlot media={project.media} />
+      <div className="lg:col-span-7">
+        <h3 className={h3Class}>{project.title}</h3>
+        <p className="mt-4 max-w-[62ch] text-lg leading-relaxed text-stone-700 dark:text-stone-300">{project.summary}</p>
+        <h4 className="mt-8 font-heading text-base font-semibold text-stone-900 dark:text-stone-100">{project.builtTitle}</h4>
+        <ul className="mt-3 space-y-2 text-base leading-relaxed text-stone-700 dark:text-stone-300">
+          {project.built.map((item) => (
+            <li key={item} className="flex gap-3">
+              <span className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-accent-700 dark:bg-accent-400" aria-hidden="true" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <a href={project.caseStudyPath} className={btnPrimary}>
+            {project.ctaCase}
+            <ArrowRight size={16} aria-hidden="true" />
+          </a>
+          <ExternalSiteLink href={project.url} newTab={newTab} className={btnSecondary}>
+            {project.ctaSite}
+            <ArrowUpRight size={16} aria-hidden="true" />
+          </ExternalSiteLink>
+        </div>
+      </div>
+      <div className="lg:col-span-5">
+        <dl className="border-b border-stone-200 dark:border-stone-800">
+          {project.facts.map((fact) => (
+            <div key={fact.label} className="border-t border-stone-200 py-3 dark:border-stone-800">
+              <dt className="text-sm text-stone-600 dark:text-stone-400">{fact.label}</dt>
+              <dd className="mt-0.5 font-semibold text-stone-900 dark:text-stone-50">{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400">{project.stack}</p>
+      </div>
+    </article>
+  );
+}
+
+function WideCard({ project, newTab }) {
+  return (
+    <article id={project.id} className={`mt-6 ${cardClass}`}>
+      <MediaSlot media={project.media} />
+      <div className="lg:col-span-7">
+        <h3 className={h3Class}>{project.title}</h3>
+        <p className="mt-4 max-w-[62ch] text-lg leading-relaxed text-stone-700 dark:text-stone-300">{project.summary}</p>
+        <div className="mt-8">
+          <ExternalSiteLink href={project.url} newTab={newTab} className={`inline-flex items-center gap-2 py-2 ${textLink}`}>
+            {project.ctaSite}
+            <ArrowUpRight size={16} aria-hidden="true" />
+          </ExternalSiteLink>
+        </div>
+      </div>
+      <div className="lg:col-span-5">
+        <ul className="border-b border-stone-200 dark:border-stone-800">
+          {project.built.map((item) => (
+            <li key={item} className="border-t border-stone-200 py-3 text-base leading-relaxed text-stone-700 dark:border-stone-800 dark:text-stone-300">
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400">{project.stack}</p>
+      </div>
+    </article>
+  );
+}
+
+function RowCard({ project }) {
+  return (
+    <article id={project.id} className="border-t border-stone-300 py-8 dark:border-stone-700">
+      <h3 className="font-heading text-xl font-bold text-stone-950 dark:text-stone-50 sm:text-2xl">{project.title}</h3>
+      <p className="mt-3 max-w-[62ch] text-base leading-relaxed text-stone-700 dark:text-stone-300">{project.summary}</p>
+      <p className="mt-4 text-sm text-stone-600 dark:text-stone-400">{project.meta}</p>
+    </article>
+  );
+}
 
 export default function ProjectsSection() {
   const { projects: projectsCopy } = useContent();
+  const items = projectsCopy.items;
+  const feature = items.find((p) => p.layout === "feature");
+  const wide = items.find((p) => p.layout === "wide");
+  const rows = items.filter((p) => p.layout === "row");
+  const line = items.find((p) => p.layout === "line");
 
   return (
-    <section className="space-y-10 py-14 sm:space-y-12 sm:py-20">
-      <SectionTitle eyebrow={projectsCopy.eyebrow} title={projectsCopy.title} text={projectsCopy.text} />
-
-      <div className="grid gap-6 lg:grid-cols-2">
-        {projectsCopy.projects.map((project) => (
-          <article
-            key={project.id}
-            className={`flex min-w-0 flex-col overflow-hidden rounded-2xl border bg-white shadow-sm transition-colors duration-200 hover:shadow-md dark:bg-stone-900 ${
-              project.featured
-                ? "border-accent-400/50 ring-1 ring-accent-500/20 dark:border-accent-700/50 lg:col-span-2"
-                : "border-stone-300 hover:border-stone-400 dark:border-stone-600 dark:hover:border-stone-500"
-            }`}
-          >
-            <div className={`h-1.5 ${project.barClass}`} />
-            <div className="flex flex-1 flex-col p-6 sm:p-8">
-              <div className="flex flex-wrap items-start justify-between gap-3">
-                <h3 className="font-heading text-xl font-semibold text-stone-900 dark:text-stone-50 sm:text-2xl">
-                  {project.title}
-                </h3>
-                {project.featured && (
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-accent-300 bg-mint-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-moss-900 dark:border-accent-800 dark:bg-moss-950/50 dark:text-mint-200">
-                    <Star size={12} className="text-accent-600 dark:text-accent-400" aria-hidden="true" />
-                    {projectsCopy.featuredLabel}
-                  </span>
-                )}
-              </div>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600 dark:text-stone-400 sm:text-base">
-                {project.description}
-              </p>
-              {project.highlights?.length > 0 && (
-                <ul className="mt-4 space-y-2">
-                  {project.highlights.map((item) => (
-                    <li key={item} className="flex gap-2 text-sm text-stone-700 dark:text-stone-300">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500" aria-hidden="true" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <p className="mt-4 text-sm font-semibold text-accent-700 dark:text-accent-400">{project.impact}</p>
-              <div className="mt-5 flex flex-wrap items-center gap-3">
-                <ul className="flex flex-wrap gap-2">
-                  {project.stack.map((tech) => (
-                    <li
-                      key={tech}
-                      className="rounded-md border border-stone-300 bg-stone-100 px-2 py-1 text-xs font-medium text-stone-800 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-200"
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-                {project.url && (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="ml-auto inline-flex items-center gap-1.5 text-sm font-semibold text-accent-700 transition-colors hover:text-accent-800 dark:text-accent-400 dark:hover:text-accent-300"
-                  >
-                    {projectsCopy.visitSite}
-                    <ArrowUpRight size={16} aria-hidden="true" />
-                  </a>
-                )}
-              </div>
-            </div>
-          </article>
+    <section id="work" aria-labelledby="work-title" className={sectionClass}>
+      <h2 id="work-title" className={h2Class}>
+        {projectsCopy.title}
+      </h2>
+      <FeatureCard project={feature} newTab={projectsCopy.newTab} />
+      <WideCard project={wide} newTab={projectsCopy.newTab} />
+      <div className="mt-12 grid gap-x-12 lg:grid-cols-2">
+        {rows.map((project) => (
+          <RowCard key={project.id} project={project} />
         ))}
       </div>
+      {line && (
+        <p className="mt-8 border-t border-stone-300 pt-6 text-base text-stone-700 dark:border-stone-700 dark:text-stone-300">
+          {line.summary}
+        </p>
+      )}
     </section>
   );
 }

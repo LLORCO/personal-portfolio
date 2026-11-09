@@ -1,42 +1,43 @@
-import { ArrowUpRight, Users } from "lucide-react";
 import { useContent } from "../../hooks/useContent";
-import SectionTitle from "../ui/SectionTitle";
+import { textLink } from "../ui/buttons";
 
 export default function CommunitySection() {
-  const { community } = useContent();
+  const { community, projects } = useContent();
 
   return (
-    <section className="space-y-10 py-14 sm:space-y-12 sm:py-20">
-      <SectionTitle eyebrow={community.eyebrow} title={community.title} text={community.text} />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {community.cards.map((card) => (
-          <article
-            key={card.title}
-            className={`flex flex-col rounded-2xl border p-6 shadow-sm ${
-              card.accent
-                ? "border-accent-300 bg-mint-50 dark:border-accent-800 dark:bg-moss-950/50"
-                : "border-stone-300 bg-white dark:border-stone-600 dark:bg-stone-900"
-            }`}
+    <section
+      id="community"
+      aria-labelledby="community-title"
+      className="scroll-mt-24 border-t border-stone-200 py-14 dark:border-stone-800 sm:py-20"
+    >
+      <h2
+        id="community-title"
+        className="font-heading text-3xl font-bold tracking-[-0.02em] text-stone-950 dark:text-stone-50 sm:text-4xl"
+      >
+        {community.title}
+      </h2>
+      <ul className="mt-8 border-b border-stone-300 dark:border-stone-700">
+        {community.items.map((item) => (
+          <li
+            key={item.name}
+            className="grid gap-2 border-t border-stone-300 py-6 dark:border-stone-700 sm:grid-cols-[14rem_1fr]"
           >
-            <div className="inline-flex w-fit rounded-xl border-2 border-accent-400/60 bg-white p-2.5 text-accent-600 shadow-sm ring-1 ring-accent-500/15 dark:border-accent-600/50 dark:bg-stone-800 dark:text-accent-400 dark:ring-accent-500/25">
-              <Users size={20} strokeWidth={2.25} aria-hidden="true" />
+            <div>
+              <h3 className="font-heading text-xl font-semibold text-stone-950 dark:text-stone-50">{item.name}</h3>
+              {item.role ? <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">{item.role}</p> : null}
             </div>
-            <h3 className="mt-4 font-heading text-lg font-semibold text-stone-900 dark:text-stone-50">{card.title}</h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-stone-800 dark:text-stone-200">{card.description}</p>
-            {card.href && (
-              <a
-                href={card.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-accent-700 transition-colors hover:text-accent-800 dark:text-accent-400 dark:hover:text-accent-300"
-              >
-                {card.hrefLabel}
-                <ArrowUpRight size={16} aria-hidden="true" />
-              </a>
-            )}
-          </article>
+            <div>
+              <p className="text-base leading-relaxed text-stone-700 dark:text-stone-300">{item.description}</p>
+              {item.href ? (
+                <a href={item.href} target="_blank" rel="noopener noreferrer" className={`mt-2 inline-flex ${textLink}`}>
+                  {item.hrefLabel}
+                  <span className="sr-only">{projects.newTab}</span>
+                </a>
+              ) : null}
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Jorge Hernández",
+  "short_name": "Jorge Hernández",
+  "description": "Shopify Front-End Developer in Puebla, Mexico. Custom Online Store 2.0 themes, catalog migrations and WCAG accessibility.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#047857",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

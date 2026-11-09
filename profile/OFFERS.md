@@ -102,7 +102,7 @@ I'm currently working with teams and clients, and open to challenging projects a
 
 | Propuesta | Descripción |
 |---|---|
-| **REST APIs** | Diseño e implementación con Java/Spring Boot o Python |
+| **REST APIs** | Diseño e implementación con Python |
 | **Integraciones third-party** | CRMs, ERPs, payment gateways, shipping, marketing tools |
 | **Automatización de datos** | Scripts de migración, sync, ETL ligero (CSV, APIs, webhooks) |
 | **Database & SQL** | Consultas, modelado, mantenimiento de datos de producto/catálogo |

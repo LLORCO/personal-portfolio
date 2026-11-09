@@ -1,369 +1,440 @@
 export const personal = {
   fullName: "Jorge Hernández",
-  givenName: "Jorge",
-  roleShort: "Creative dev · Ecommerce · A11y",
-  tagline: "SHOPIFY / FRONTEND / FULL STACK",
+  role: "Shopify Front-End Developer",
   email: "jlhc1996@gmail.com",
   links: {
     github: "https://github.com/LLORCO",
     linkedin: "https://linkedin.com/in/jorge-luis-hc",
     pytalavera: "https://pytalavera.github.io/comunidad/",
+    pydayMexico: null,
+    memoryAir: "https://memoryair.com",
+    savorySpice: "https://www.savoryspiceshop.com",
   },
+  cv: { es: "/cv/Jorge-Hernandez-CV-ES.pdf", en: "/cv/Jorge-Hernandez-CV-EN.pdf" },
 };
-
-export const marqueeTokens = [
-  "ECOMMERCE",
-  "SHOPIFY",
-  "A11Y",
-  "CREATIVE DEV",
-  "FULL STACK",
-  "SEO",
-  "PYTALAVERA",
-  "COMMUNITY",
-];
-
-const projectsEs = [
-  {
-    id: "savory-spice",
-    title: "Savory Spice — Refresh de marca a escala",
-    description:
-      "Colaboré con diseño en el refresco de identidad de Savory Spice y construí secciones completas del theme Shopify: carousels custom, store locator, PDP avanzados, páginas automatizadas y migración de metafields para un catálogo de 400+ productos. El proyecto donde convergen casi todas mis habilidades de interfaz.",
-    stack: ["Shopify", "Liquid", "JavaScript", "Python", "Matrixify", "Figma"],
-    impact: "Storefront renovado que la marca puede presumir",
-    barClass: "bg-moss-800",
-    featured: true,
-    url: "https://www.savoryspiceshop.com",
-    highlights: [
-      "Refresh de identidad con equipo de diseño",
-      "Store locator · carousels · recipe cards · gift sets",
-      "Páginas automatizadas y metafields a gran escala",
-    ],
-  },
-  {
-    id: "leaf-shave",
-    title: "Leaf Shave — Accesibilidad en producción",
-    description:
-      "Serie de mejoras WCAG/ADA en theme Shopify: cart live regions, jerarquía de headings, alt text, landmarks ARIA y correcciones semánticas auditables.",
-    stack: ["Shopify", "Liquid", "WCAG", "ARIA"],
-    impact: "Experiencia inclusiva y riesgo legal reducido",
-    barClass: "bg-accent-500",
-  },
-  {
-    id: "figs-landing",
-    title: "FIGS Landing — Creative dev",
-    description:
-      "Landing corporativa con nav sticky, carousels, cards animadas y docena de fixes mobile. Creatividad visual con ejecución fiel al diseño.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    impact: "36 PRs mergeados — detalle en cada breakpoint",
-    barClass: "bg-vibe-500",
-  },
-  {
-    id: "side-projects",
-    title: "Side projects — UX para operadores",
-    description:
-      "Invitación web y scoreboard de torneos: interfaces pensadas tanto para quien las usa como para quien las opera — claras, accesibles y sin fricción.",
-    stack: ["React", "Vite", "Tailwind", "Python"],
-    impact: "Experiencia memorable en contextos reales",
-    barClass: "bg-stone-600",
-  },
-];
-
-const projectsEn = [
-  {
-    id: "savory-spice",
-    title: "Savory Spice — Brand refresh at scale",
-    description:
-      "Partnered with design on Savory Spice's brand refresh and built complete Shopify theme sections: custom carousels, store locator, advanced PDPs, automated pages, and metafield migration for a 400+ product catalog. The project where nearly all my interface skills converge.",
-    stack: ["Shopify", "Liquid", "JavaScript", "Python", "Matrixify", "Figma"],
-    impact: "A renewed storefront the brand can be proud of",
-    barClass: "bg-moss-800",
-    featured: true,
-    url: "https://www.savoryspiceshop.com",
-    highlights: [
-      "Brand refresh with the design team",
-      "Store locator · carousels · recipe cards · gift sets",
-      "Automated pages and metafields at scale",
-    ],
-  },
-  {
-    id: "leaf-shave",
-    title: "Leaf Shave — Accessibility in production",
-    description:
-      "WCAG/ADA improvements across a Shopify theme: cart live regions, heading hierarchy, alt text, ARIA landmarks, and auditable semantic fixes.",
-    stack: ["Shopify", "Liquid", "WCAG", "ARIA"],
-    impact: "Inclusive experience and reduced legal risk",
-    barClass: "bg-accent-500",
-  },
-  {
-    id: "figs-landing",
-    title: "FIGS Landing — Creative dev",
-    description:
-      "Corporate landing with sticky nav, carousels, animated cards, and extensive mobile fixes. Visual creativity with execution faithful to the design.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    impact: "36 merged PRs — detail at every breakpoint",
-    barClass: "bg-vibe-500",
-  },
-  {
-    id: "side-projects",
-    title: "Side projects — UX for operators",
-    description:
-      "Wedding invitation site and tournament scoreboard: interfaces designed for both end users and the people who run them — clear, accessible, friction-free.",
-    stack: ["React", "Vite", "Tailwind", "Python"],
-    impact: "Memorable experience in real-world contexts",
-    barClass: "bg-stone-600",
-  },
-];
 
 const skillGroupsEs = [
   {
-    id: "frontend",
-    label: "Frontend",
-    items: ["React", "Tailwind", "JavaScript", "Responsive", "Fidelidad al diseño"],
+    label: "Shopify",
+    items:
+      "Shopify Plus · Liquid · Online Store 2.0 · Metafields · Shopify CLI · GraphQL Admin API · Theme Check",
   },
   {
-    id: "ecommerce",
-    label: "Ecommerce",
-    items: ["Shopify", "Liquid", "Metafields", "PDP", "Integraciones"],
+    label: "Front-end",
+    items:
+      "JavaScript · Web Components · TypeScript · Tailwind CSS · Vite · HTML · CSS · React (mantenimiento de Hydrogen/Oxygen: JSX, hooks, estado)",
   },
   {
-    id: "quality",
-    label: "Calidad",
-    items: ["WCAG/ADA", "SEO", "Semantic HTML", "ARIA", "Auditorías"],
+    label: "Accesibilidad",
+    items: "WCAG · ARIA · HTML semántico · axe DevTools",
   },
   {
-    id: "backend",
+    label: "Datos e integraciones",
+    items: "Python · Matrixify · Searchanise · Seal Subscriptions · Klaviyo",
+  },
+  {
+    label: "Flujo de trabajo",
+    items: "Git y GitHub (PRs y code review) · Figma",
+  },
+  {
     label: "Backend",
-    items: ["Java", "Spring Boot", "Python", "REST", "SQL"],
-  },
-  {
-    id: "plus",
-    label: "Plus",
-    items: ["Git", "PM web", "Community building"],
+    items: "Java · Spring Boot",
   },
 ];
 
 const skillGroupsEn = [
   {
-    id: "frontend",
-    label: "Frontend",
-    items: ["React", "Tailwind", "JavaScript", "Responsive", "Design fidelity"],
+    label: "Shopify",
+    items:
+      "Shopify Plus · Liquid · Online Store 2.0 · Metafields · Shopify CLI · GraphQL Admin API · Theme Check",
   },
   {
-    id: "ecommerce",
-    label: "Ecommerce",
-    items: ["Shopify", "Liquid", "Metafields", "PDP", "Integrations"],
+    label: "Front-end",
+    items:
+      "JavaScript · Web Components · TypeScript · Tailwind CSS · Vite · HTML · CSS · React (maintaining Hydrogen/Oxygen: JSX, hooks, state)",
   },
   {
-    id: "quality",
-    label: "Quality",
-    items: ["WCAG/ADA", "SEO", "Semantic HTML", "ARIA", "Audits"],
+    label: "Accessibility",
+    items: "WCAG · ARIA · semantic HTML · axe DevTools",
   },
   {
-    id: "backend",
+    label: "Data and integrations",
+    items: "Python · Matrixify · Searchanise · Seal Subscriptions · Klaviyo",
+  },
+  {
+    label: "Workflow",
+    items: "Git and GitHub (PRs and code review) · Figma",
+  },
+  {
     label: "Backend",
-    items: ["Java", "Spring Boot", "Python", "REST", "SQL"],
-  },
-  {
-    id: "plus",
-    label: "Plus",
-    items: ["Git", "Web PM", "Community building"],
+    items: "Java · Spring Boot",
   },
 ];
 
-const servicesColumnsEs = [
+const projectsEs = [
   {
-    id: "digital",
-    title: "Negocio digital",
-    items: [
-      "Desarrollo y customización de themes Shopify",
-      "Landings y storefronts fieles al diseño",
-      "Metafields, metaobjects y migración de catálogos a escala",
-      "Integraciones con apps, CRMs y APIs third-party",
-      "SEO técnico y optimización de performance",
+    id: "memory-air",
+    layout: "feature",
+    title: "Memory Air: de wireframes a un tema Shopify a medida",
+    summary:
+      "Memory Air es una marca de salud del sueño. Los diseños llegaron como wireframes de baja fidelidad, así que propuse por mi cuenta cómo debía verse y moverse el sitio. El cliente aprobó la propuesta y la construí como desarrollador principal.",
+    builtTitle: "Lo que propuse y construí",
+    built: [
+      "Una historia con video que avanza con el scroll en la página Science",
+      "Tarjetas de beneficios que se voltean, con botón y teclado",
+      "Contadores animados para las cifras del estudio que publica la marca",
+      "Página de producto con membresía y su lógica en el carrito",
     ],
+    facts: [
+      { label: "Rol", value: "Desarrollador principal" },
+      { label: "Periodo", value: "jul–ago 2026" },
+      { label: "Alcance", value: "Home, producto, Science y Wholesale" },
+      { label: "PRs", value: "57 de 60 (56 mergeados)" },
+    ],
+    stack: "Shopify Online Store 2.0 · Liquid · Web Components · Tailwind CSS 4 · Vite · Seal Subscriptions",
+    url: personal.links.memoryAir,
+    caseStudyPath: "/memory-air",
+    media: null,
+    ctaCase: "Leer el caso completo",
+    ctaSite: "Ver memoryair.com",
   },
   {
-    id: "quality",
-    title: "Calidad & confianza",
-    items: [
-      "Auditorías y remediación WCAG / ADA",
-      "Semantic HTML, ARIA y live regions en producción",
-      "QA de accesibilidad y criterios de aceptación",
-      "Design systems e implementación desde Figma",
-      "Microinteracciones con propósito funcional",
+    id: "savory-spice",
+    layout: "wide",
+    title: "Savory Spice: migración de catálogo en un refresh de marca",
+    summary:
+      "Participé como desarrollador en el refresh de marca de Savory Spice, una tienda Shopify Plus, junto al equipo de diseño. Migré el catálogo completo al tema nuevo: más de 400 productos con unos 115 metafields cada uno, además de recetas, blogs, colecciones y ubicaciones, automatizado con Python y Matrixify. También construí el store locator y los gift sets.",
+    built: [
+      "Cambié la configuración manual en JSON por secciones con selectores de producto: el equipo de la tienda edita sin ayuda de desarrollo.",
+      "Integré la búsqueda de Searchanise y coordiné con sus desarrolladores para ampliar los datos de su API.",
+      "El tema nuevo carga al menos 15% más rápido.",
+      "28 PRs mergeados.",
     ],
+    stack: "Shopify Plus · Liquid · JavaScript · Python · Matrixify · Searchanise",
+    url: personal.links.savorySpice,
+    media: null,
+    ctaSite: "Ver savoryspiceshop.com",
   },
   {
-    id: "scale",
-    title: "Escala & operaciones",
-    items: [
-      "REST APIs (Java/Spring Boot, Python)",
-      "Conectividad CRM / ERP con web y ecommerce",
-      "Automatización de datos y scripts de migración",
-      "Ownership de proyectos y PM de entregas web",
-    ],
+    id: "leaf-shave",
+    layout: "row",
+    title: "Leaf Shave: accesibilidad en una tienda en producción",
+    summary:
+      "Audité 54 páginas con axe DevTools y encontré más de 2,000 problemas WCAG, 49 de ellos críticos. Corregí todos los que dependían del código (contraste, teclado, nombres accesibles, ARIA, tamaño de objetivos táctiles) y documenté los que dependían de diseño o marca para que el cliente decidiera. También trabajé con los desarrolladores de apps de terceros para que agregaran aria-labels a sus widgets, un arreglo que llega a todas las tiendas que usan esos plugins.",
+    meta: "Shopify · Liquid · WCAG · ARIA · axe DevTools · 11 PRs mergeados",
+  },
+  {
+    id: "figs",
+    layout: "row",
+    title: "FIGS: landing estática con interacción",
+    summary:
+      "Landing en HTML, CSS y JavaScript a partir de diseños en Figma: navegación sticky, tabs, carruseles, tarjetas animadas y parallax.",
+    meta: "HTML · CSS · JavaScript · 36 PRs mergeados",
+  },
+  {
+    id: "side-projects",
+    layout: "line",
+    summary:
+      "Proyectos personales: una invitación web para bodas y un scoreboard para torneos de Street Fighter.",
   },
 ];
 
-const servicesColumnsEn = [
+const projectsEn = [
   {
-    id: "digital",
-    title: "Digital business",
-    items: [
-      "Shopify theme development & customization",
-      "Landings & storefronts faithful to the design",
-      "Metafields, metaobjects & catalog migration at scale",
-      "App, CRM & third-party API integrations",
-      "Technical SEO & performance optimization",
+    id: "memory-air",
+    layout: "feature",
+    title: "Memory Air: from wireframes to a custom Shopify theme",
+    summary:
+      "Memory Air is a sleep health brand. The designs arrived as low-fidelity wireframes, so I proposed how the site should look and move. The client approved it, and I built it as the lead developer.",
+    builtTitle: "What I proposed and built",
+    built: [
+      "A scroll-driven video story on the Science page",
+      "Benefit cards that flip, with a button and keyboard support",
+      "Animated counters for the study figures the brand publishes",
+      "A product page with a membership and its cart logic",
     ],
+    facts: [
+      { label: "Role", value: "Lead developer" },
+      { label: "Timeline", value: "Jul–Aug 2026" },
+      { label: "Scope", value: "Home, product, Science and Wholesale" },
+      { label: "PRs", value: "57 of 60 (56 merged)" },
+    ],
+    stack: "Shopify Online Store 2.0 · Liquid · Web Components · Tailwind CSS 4 · Vite · Seal Subscriptions",
+    url: personal.links.memoryAir,
+    caseStudyPath: "/memory-air",
+    media: null,
+    ctaCase: "Read the case study",
+    ctaSite: "Visit memoryair.com",
   },
   {
-    id: "quality",
-    title: "Quality & trust",
-    items: [
-      "WCAG / ADA audits & remediation",
-      "Semantic HTML, ARIA & live regions in production",
-      "Accessibility QA & acceptance criteria",
-      "Design systems & Figma-to-code implementation",
-      "Microinteractions with functional purpose",
+    id: "savory-spice",
+    layout: "wide",
+    title: "Savory Spice: catalog migration during a brand refresh",
+    summary:
+      "I worked as a developer on Savory Spice's brand refresh, a Shopify Plus store, alongside the design team. I migrated the full catalog to the new theme: 400+ products with about 115 metafields each, plus recipes, blogs, collections and store locations, automated with Python and Matrixify. I also built the store locator and the gift sets.",
+    built: [
+      "Replaced manual JSON settings with product-picker sections, so the store team edits content without a developer.",
+      "Integrated Searchanise search and worked with their developers to add the data their API was missing.",
+      "The new theme loads at least 15% faster.",
+      "28 merged PRs.",
     ],
+    stack: "Shopify Plus · Liquid · JavaScript · Python · Matrixify · Searchanise",
+    url: personal.links.savorySpice,
+    media: null,
+    ctaSite: "Visit savoryspiceshop.com",
   },
   {
-    id: "scale",
-    title: "Scale & operations",
-    items: [
-      "REST APIs (Java/Spring Boot, Python)",
-      "CRM / ERP connectivity with web & ecommerce",
-      "Data automation & migration scripts",
-      "Project ownership & web delivery PM",
-    ],
+    id: "leaf-shave",
+    layout: "row",
+    title: "Leaf Shave: accessibility on a live store",
+    summary:
+      "I audited 54 pages with axe DevTools and found more than 2,000 WCAG issues, 49 of them critical. I fixed every issue that could be fixed in code (contrast, keyboard access, accessible names, ARIA, touch target size) and documented the ones that depended on design or brand decisions for the client. I also worked with third-party app developers to add aria-labels to their widgets, a fix that reaches every store using those plugins.",
+    meta: "Shopify · Liquid · WCAG · ARIA · axe DevTools · 11 merged PRs",
+  },
+  {
+    id: "figs",
+    layout: "row",
+    title: "FIGS: interactive static landing page",
+    summary:
+      "A landing page in HTML, CSS and JavaScript, built from Figma designs: sticky navigation, tabs, carousels, animated cards and parallax.",
+    meta: "HTML · CSS · JavaScript · 36 merged PRs",
+  },
+  {
+    id: "side-projects",
+    layout: "line",
+    summary: "Side projects: a wedding invitation site and a scoreboard for Street Fighter tournaments.",
   },
 ];
 
-const communityCardsEs = [
-  {
-    title: "PyTalavera",
-    description:
-      "Co-organizador. Meetups, onboarding, ponentes, charlas y conexión con el ecosistema tech de Puebla.",
-    href: personal.links.pytalavera,
-    hrefLabel: "Ver comunidad",
-    accent: false,
-  },
-  {
-    title: "PyDay México",
-    description:
-      "PM del sitio del circuito nacional; Puebla como primera sede. Call for speakers, revisión, testing y propuestas de producto.",
-    accent: true,
-  },
-  {
-    title: "Charlas y mentoría",
-    description: "Pláticas técnicas (Python, retro games), espacios inclusivos para todos los niveles.",
-    accent: false,
-  },
-];
+const memoryAirCaseEs = {
+  metaTitle: "Memory Air: caso de estudio · Jorge Hernández",
+  title: "Memory Air: de wireframes a un tema Shopify a medida",
+  intro:
+    "Memory Air vende un dispositivo de cabecera pensado para dormir mejor y cuidar la memoria. Fui el desarrollador principal de su tema de Shopify, del header a la página de producto, y trabajé directo con el cliente.",
+  facts: [
+    { label: "Rol", value: "Desarrollador principal" },
+    { label: "Periodo", value: "julio a agosto de 2026" },
+    { label: "Alcance", value: "home, producto, Science y Wholesale" },
+    { label: "Trabajo", value: "57 de los 60 PRs del proyecto (56 mergeados)" },
+    {
+      label: "Stack",
+      value:
+        "Shopify Online Store 2.0, Liquid, Web Components en JavaScript, Tailwind CSS 4, Vite, Seal Subscriptions",
+    },
+  ],
+  sections: [
+    {
+      title: "El punto de partida",
+      paragraphs: [
+        "Los diseños llegaron como wireframes de baja fidelidad. Definían qué contenido iba en cada página, pero no cómo se veía ni cómo se movía. Esas decisiones había que tomarlas antes de construir.",
+      ],
+    },
+    {
+      title: "Lo que propuse",
+      paragraphs: ["Por iniciativa propia propuse tres patrones de interfaz. El cliente los aprobó y los construí:"],
+      list: [
+        {
+          label: "Una historia con video que avanza con el scroll",
+          detail: "en la página Science. El video se queda fijo mientras lees cada paso de la explicación.",
+        },
+        {
+          label: "Tarjetas de beneficios que se voltean",
+          detail: "para mostrar el detalle de cada beneficio. Se abren con un botón y funcionan con teclado.",
+        },
+        {
+          label: "Contadores animados",
+          detail: "para las cifras del estudio que publica la marca.",
+        },
+      ],
+      after: "Las cifras y el estudio son de Memory Air; mi trabajo fue cómo se presentan.",
+    },
+    {
+      title: "Cómo lo construí",
+      paragraphs: [
+        "El tema usa secciones y bloques de Online Store 2.0 en Liquid, para que el equipo de la marca edite el contenido desde el admin. La interactividad vive en unas 35 islas de Web Components en JavaScript que se cargan cuando entran en pantalla. Los estilos van con Tailwind CSS 4 y el build con Vite.",
+      ],
+    },
+    {
+      title: "Un problema en producción",
+      paragraphs: [
+        "Desde landing pages de terceros se podía comprar la membresía sin el dispositivo. Primero contuve la falla con un script de emergencia para no detener las ventas. Después la cerré de forma permanente: con Seal Subscriptions, la membresía ahora depende del dispositivo dentro del carrito.",
+      ],
+    },
+    {
+      title: "Resultado",
+      paragraphs: ["La propuesta se aprobó y el tema está en producción en memoryair.com."],
+    },
+  ],
+  ctaSite: "Ver memoryair.com",
+  back: "Volver a proyectos",
+  cv: "Descargar CV",
+  media: { hero: null, beforeAfter: null },
+};
 
-const communityCardsEn = [
-  {
-    title: "PyTalavera",
-    description:
-      "Co-organizer. Meetups, onboarding, speakers, talks, and connection with Puebla's tech ecosystem.",
-    href: personal.links.pytalavera,
-    hrefLabel: "View community",
-    accent: false,
-  },
-  {
-    title: "PyDay Mexico",
-    description:
-      "PM for the national event circuit website; Puebla as the first venue. Call for speakers, review, testing, and product proposals.",
-    accent: true,
-  },
-  {
-    title: "Talks & mentoring",
-    description: "Technical talks (Python, retro games), inclusive spaces for all experience levels.",
-    accent: false,
-  },
-];
-
-const roleChipsEs = ["Frontend", "Full Stack", "Design-Dev", "Shopify Developer"];
-const roleChipsEn = ["Frontend", "Full Stack", "Design-Dev", "Shopify Developer"];
+const memoryAirCaseEn = {
+  metaTitle: "Memory Air: case study · Jorge Hernández",
+  title: "Memory Air: from wireframes to a custom Shopify theme",
+  intro:
+    "Memory Air sells a bedside device designed to support sleep and memory. I was the lead developer on their Shopify theme, from the header to the product page, and worked directly with the client.",
+  facts: [
+    { label: "Role", value: "Lead developer" },
+    { label: "Timeline", value: "July to August 2026" },
+    { label: "Scope", value: "home, product, Science and Wholesale pages" },
+    { label: "Work", value: "57 of the project's 60 PRs (56 merged)" },
+    {
+      label: "Stack",
+      value: "Shopify Online Store 2.0, Liquid, JavaScript Web Components, Tailwind CSS 4, Vite, Seal Subscriptions",
+    },
+  ],
+  sections: [
+    {
+      title: "Where it started",
+      paragraphs: [
+        "The designs arrived as low-fidelity wireframes. They set what content went on each page, but not how it should look or move. Those decisions had to be made before building.",
+      ],
+    },
+    {
+      title: "What I proposed",
+      paragraphs: ["On my own initiative I proposed three interface patterns. The client approved them, and I built them:"],
+      list: [
+        {
+          label: "A scroll-driven video story",
+          detail: "on the Science page. The video stays in place while you read each step of the explanation.",
+        },
+        {
+          label: "Benefit cards that flip",
+          detail: "to show the detail behind each benefit. They open with a button and work with a keyboard.",
+        },
+        {
+          label: "Animated counters",
+          detail: "for the study figures the brand publishes.",
+        },
+      ],
+      after: "The figures and the study belong to Memory Air; my work was how they are presented.",
+    },
+    {
+      title: "How I built it",
+      paragraphs: [
+        "The theme uses Online Store 2.0 sections and blocks in Liquid, so the brand's team can edit content from the admin. Interactivity lives in about 35 JavaScript Web Component islands that load when they scroll into view. Styling uses Tailwind CSS 4, and Vite handles the build.",
+      ],
+    },
+    {
+      title: "A problem in production",
+      paragraphs: [
+        "Third-party landing pages let people buy the membership without the device. I first contained it with an emergency script so sales could continue. Then I closed it for good: with Seal Subscriptions, the membership now depends on the device in the cart.",
+      ],
+    },
+    {
+      title: "Outcome",
+      paragraphs: ["The proposal was approved, and the theme is live at memoryair.com."],
+    },
+  ],
+  ctaSite: "Visit memoryair.com",
+  back: "Back to projects",
+  cv: "Download CV",
+  media: { hero: null, beforeAfter: null },
+};
 
 export const content = {
   es: {
     skipLink: "Saltar al contenido principal",
-    header: { contact: "Contacto" },
-    availability: "Abierto a nuevas oportunidades",
+    header: {
+      contact: "Contacto",
+      navLabel: "Principal",
+      nav: {
+        work: "Proyectos",
+        community: "Comunidad",
+        cv: "CV",
+        cvLabel: "Descargar CV en PDF",
+      },
+    },
     hero: {
-      eyebrow: "Developer with design DNA",
-      headline: "Desarrollo creativo. Ejecución optimizada.",
-      subheadline: "Ecommerce e interfaces que tu marca puede presumir.",
-      intro:
-        "Soy Jorge, desarrollador full stack con mentalidad de diseño y enfoque en quien usa lo que construyo. Trabajo ecommerce en Shopify, landings de alto detalle y soluciones donde la estética, la accesibilidad y la optimización técnica van de la mano.",
-      valueTitle: "Valor para equipos y clientes",
-      valueItems: [
-        "Traduzco necesidades de negocio en interfaces de alta calidad en Shopify y web.",
-        "Cierro la brecha entre diseño y desarrollo con criterio de accesibilidad (WCAG/ADA).",
-        "Automatizo y optimizo procesos técnicos — metafields, integraciones, SEO e IA aplicada.",
+      title: "Shopify Front-End Developer",
+      lead: "Soy Jorge Hernández. Construyo temas Shopify Online Store 2.0 a medida para marcas de EE. UU.: secciones que el equipo del cliente edita sin depender de un desarrollador, catálogos migrados con scripts y correcciones de accesibilidad WCAG.",
+      meta: "Más de tres años desarrollando web, casi dos en una agencia Shopify de EE. UU. Trabajo en remoto y en inglés desde Puebla, México.",
+      ctaWork: "Ver proyectos",
+      ctaCv: "Descargar CV (PDF)",
+      ctaEmail: "Escríbeme",
+      availability: "Disponible para roles remotos de Shopify y Front-End.",
+      community: [
+        { t: "Fuera del trabajo co-organizo " },
+        { link: "pytalavera", t: "PyTalavera" },
+        { t: ", organizo " },
+        { link: "pydayMexico", t: "PyDay México" },
+        { t: " y soy mentor en hackatones." },
       ],
-      stats: [
-        { label: "Enfoque", value: "UI + A11y" },
-        { label: "Alcance", value: "Ecommerce" },
-        { label: "Detalle", value: "Pixel" },
+      recentTitle: "Trabajo reciente",
+      recent: [
+        {
+          id: "memory-air",
+          href: "#memory-air",
+          name: "Memory Air",
+          description: "Tema a medida, de wireframes a producción",
+        },
+        {
+          id: "savory-spice",
+          href: "#savory-spice",
+          name: "Savory Spice",
+          description: "Migración de 400+ productos y store locator",
+        },
+        {
+          id: "leaf-shave",
+          href: "#leaf-shave",
+          name: "Leaf Shave",
+          description: "Auditoría WCAG de 54 páginas",
+        },
       ],
-    },
-    cv: {
-      label: "Descargar CV",
-      ariaLabel: "Descargar CV en español (PDF)",
-      altLabel: "También en inglés",
-      altAriaLabel: "También en inglés: descargar CV en inglés (PDF)",
-    },
-    about: {
-      eyebrow: "About",
-      title: "Diseño, código y criterio para quien lo usa",
-      text: "No encajo en una sola etiqueta: soy full stack con tendencia a frontend, creative dev en lo visual y community builder en Puebla. Antes de escribir código me pregunto quién lo va a usar, cómo se puede ver mejor y cómo sorprender sin sacrificar lo funcional.",
-      pillars: [
-        { text: "Calidad visual consistente — fiel al diseño y responsivo en producción", variant: "default" },
-        { text: "Accesibilidad que importa — WCAG/ADA en ecommerce real, no solo en teoría", variant: "accent" },
-        { text: "Procesos que escalan — metafields, integraciones y optimización continua", variant: "default" },
-      ],
-      mantra: "Hacerlo bien. Hacerlo bonito. Hacerlo rápido. Hacerlo óptimo.",
-    },
-    services: {
-      eyebrow: "Services",
-      title: "Propuestas que puedes encontrar en mí",
-      text: "Como colaborador o como partner en proyecto — desde ecommerce y accesibilidad hasta integraciones, automatización e IA aplicada al negocio.",
-      columns: servicesColumnsEs,
-      footer: "Proyectos puntuales o colaboraciones a largo plazo — remoto, presencial o híbrido.",
-      rolesLabel: "Roles",
-      roles: roleChipsEs,
     },
     projects: {
-      eyebrow: "Projects",
-      title: "Trabajo reciente con impacto real",
-      text: "Desde un refresh de marca en Shopify hasta accesibilidad en producción y side projects con UX pensada para operadores.",
-      featuredLabel: "Proyecto destacado",
-      visitSite: "Ver sitio",
-      projects: projectsEs,
+      title: "Proyectos seleccionados",
+      newTab: "(se abre en otra pestaña)",
+      items: projectsEs,
+    },
+    about: {
+      title: "Cómo trabajo",
+      paragraphs: [
+        "Me gusta estar cerca del cliente: levanto requerimientos, coordino con proveedores de apps y reporto avances en inglés. Cuando delego trabajo a otros desarrolladores, reviso y apruebo sus PRs.",
+        "En el código cuido dos cosas: que el equipo de la tienda pueda editar el contenido desde el admin de Shopify, y que el sitio funcione con teclado y lector de pantalla.",
+      ],
     },
     skills: {
-      eyebrow: "Skills",
-      title: "Capacidades que combino en cada entrega",
-      text: "Frontend y Shopify como especialización principal, complementado con accesibilidad, backend e integraciones para soluciones completas.",
+      title: "Herramientas",
       groups: skillGroupsEs,
     },
     community: {
-      eyebrow: "Community & Talks",
-      title: "Comunidad como extensión del trabajo técnico",
-      text: "Organizo espacios, conecto personas y comparto conocimiento para impulsar mejores prácticas de desarrollo en Puebla y México.",
-      cards: communityCardsEs,
+      title: "Comunidad en Puebla y México",
+      items: [
+        {
+          name: "PyTalavera",
+          role: "Co-organizador desde 2025.",
+          description: "Meetups, ponentes, charlas y conexión con el ecosistema tech de Puebla.",
+          href: personal.links.pytalavera,
+          hrefLabel: "Ver la comunidad",
+        },
+        {
+          name: "PyDay México",
+          role: "Organizador desde 2026.",
+          description:
+            "Circuito en Puebla, CDMX, Guadalajara y Monterrey; llevo el sitio del evento: call for speakers, revisión y pruebas.",
+        },
+        {
+          name: "Charlas y mentoría",
+          role: "",
+          description:
+            "Doy charlas técnicas (Python, retro games) y soy mentor de juniors y estudiantes en hackatones.",
+        },
+      ],
     },
     contact: {
-      eyebrow: "Contact",
-      title: "Si buscas calidad visual, accesibilidad y ejecución técnica, conversemos.",
-      text: "Colaboro con equipos y clientes, y estoy abierto a proyectos y roles retadores — frontend, full stack, Shopify o híbrido diseño-dev. Proyectos cortos o largos; remoto (preferido), presencial o híbrido. Español e inglés.",
-      email: "Email",
-      github: "GitHub",
+      title: "Busco un rol remoto de Shopify o Front-End.",
+      text: "Si tu equipo trabaja con tiendas Shopify, escríbeme. Respondo en español o en inglés. También me interesan roles presenciales o híbridos en Puebla.",
+      emailCta: "jlhc1996@gmail.com",
+      cv: "Descargar CV (PDF)",
       linkedin: "LinkedIn",
-      pytalavera: "PyTalavera",
+      github: "GitHub",
+    },
+    caseStudies: {
+      memoryAir: memoryAirCaseEs,
     },
     theme: {
       toDark: "Activar modo oscuro",
@@ -374,87 +445,109 @@ export const content = {
       switchToEs: "Cambiar a español",
     },
     meta: {
-      title: "Jorge Hernández — Creative dev · Ecommerce · Accessibility",
+      title: "Jorge Hernández · Shopify Front-End Developer",
       description:
-        "Portfolio de Jorge Hernández: full stack frontend, Shopify ecommerce, accesibilidad WCAG y community builder en Puebla, México.",
+        "Shopify Front-End Developer en Puebla, México. Temas Online Store 2.0 a medida, migraciones de catálogo y accesibilidad WCAG. Disponible para roles remotos.",
     },
   },
   en: {
     skipLink: "Skip to main content",
-    header: { contact: "Contact" },
-    availability: "Open to new opportunities",
+    header: {
+      contact: "Contact",
+      navLabel: "Main",
+      nav: {
+        work: "Projects",
+        community: "Community",
+        cv: "CV",
+        cvLabel: "Download CV as PDF",
+      },
+    },
     hero: {
-      eyebrow: "Developer with design DNA",
-      headline: "Creative development. Optimized execution.",
-      subheadline: "Ecommerce and interfaces your brand can be proud of.",
-      intro:
-        "I'm Jorge, a design-minded full stack developer focused on the people who use what I build. I work on Shopify ecommerce, high-craft landing pages, and solutions where aesthetics, accessibility, and technical optimization go together.",
-      valueTitle: "Value for teams and clients",
-      valueItems: [
-        "I translate business needs into high-quality interfaces on Shopify and the web.",
-        "I bridge design and development with accessibility judgment (WCAG/ADA).",
-        "I automate and optimize technical processes — metafields, integrations, SEO, and applied AI.",
+      title: "Shopify Front-End Developer",
+      lead: "I'm Jorge Hernández. I build custom Shopify Online Store 2.0 themes for US brands: sections the client's team can edit without a developer, catalogs migrated with scripts, and WCAG accessibility fixes.",
+      meta: "Over three years building for the web, nearly two at a US Shopify agency. I work remotely, in English, from Puebla, Mexico.",
+      ctaWork: "See projects",
+      ctaCv: "Download CV (PDF)",
+      ctaEmail: "Email me",
+      availability: "Open to remote Shopify and front-end roles.",
+      community: [
+        { t: "Outside work I co-organize " },
+        { link: "pytalavera", t: "PyTalavera" },
+        { t: ", help organize " },
+        { link: "pydayMexico", t: "PyDay México" },
+        { t: " and mentor at hackathons." },
       ],
-      stats: [
-        { label: "Focus", value: "UI + A11y" },
-        { label: "Scope", value: "Ecommerce" },
-        { label: "Craft", value: "Pixel" },
+      recentTitle: "Recent work",
+      recent: [
+        {
+          id: "memory-air",
+          href: "#memory-air",
+          name: "Memory Air",
+          description: "Custom theme, from wireframes to production",
+        },
+        {
+          id: "savory-spice",
+          href: "#savory-spice",
+          name: "Savory Spice",
+          description: "400+ product migration and store locator",
+        },
+        {
+          id: "leaf-shave",
+          href: "#leaf-shave",
+          name: "Leaf Shave",
+          description: "WCAG audit across 54 pages",
+        },
       ],
-    },
-    cv: {
-      label: "Download CV",
-      ariaLabel: "Download CV in English (PDF)",
-      altLabel: "Also in Spanish",
-      altAriaLabel: "Also in Spanish: download CV in Spanish (PDF)",
-    },
-    about: {
-      eyebrow: "About",
-      title: "Design, code, and judgment for the people who use it",
-      text: "I don't fit a single label: I'm full stack with a frontend lean, a creative dev visually, and a community builder in Puebla. Before writing code I ask who will use it, how it can look better, and how to surprise without sacrificing function.",
-      pillars: [
-        { text: "Consistent visual quality — faithful to the design and responsive in production", variant: "default" },
-        { text: "Accessibility that matters — WCAG/ADA in real ecommerce, not just theory", variant: "accent" },
-        { text: "Processes that scale — metafields, integrations, and continuous optimization", variant: "default" },
-      ],
-      mantra: "Do it well. Do it beautifully. Do it fast. Do it optimally.",
-    },
-    services: {
-      eyebrow: "Services",
-      title: "What you can expect from me",
-      text: "As a teammate or project partner — from ecommerce and accessibility to integrations, automation, and AI applied to the business.",
-      columns: servicesColumnsEn,
-      footer: "Short engagements or long-term collaborations — remote, on-site, or hybrid.",
-      rolesLabel: "Roles",
-      roles: roleChipsEn,
     },
     projects: {
-      eyebrow: "Projects",
-      title: "Recent work with real impact",
-      text: "From a Shopify brand refresh to production accessibility and side projects with operator-first UX.",
-      featuredLabel: "Featured project",
-      visitSite: "Visit site",
-      projects: projectsEn,
+      title: "Selected projects",
+      newTab: "(opens in a new tab)",
+      items: projectsEn,
+    },
+    about: {
+      title: "How I work",
+      paragraphs: [
+        "I like working close to the client: I gather requirements, coordinate with app vendors and report progress in English. When I hand work to other developers, I review and approve their PRs.",
+        "In the code I focus on two things: that the store team can edit content from the Shopify admin, and that the site works with a keyboard and a screen reader.",
+      ],
     },
     skills: {
-      eyebrow: "Skills",
-      title: "Capabilities I combine on every delivery",
-      text: "Frontend and Shopify as core strengths, complemented by accessibility, backend, and integrations for complete solutions.",
+      title: "Tools",
       groups: skillGroupsEn,
     },
     community: {
-      eyebrow: "Community & Talks",
-      title: "Community as an extension of technical work",
-      text: "I organize spaces, connect people, and share knowledge to raise the bar for development practices in Puebla and Mexico.",
-      cards: communityCardsEn,
+      title: "Community in Puebla and Mexico",
+      items: [
+        {
+          name: "PyTalavera",
+          role: "Co-organizer since 2025.",
+          description: "Meetups, speakers, talks and connections across Puebla's tech scene.",
+          href: personal.links.pytalavera,
+          hrefLabel: "Visit the community",
+        },
+        {
+          name: "PyDay México",
+          role: "Organizer since 2026.",
+          description:
+            "A circuit across Puebla, Mexico City, Guadalajara and Monterrey; I run the event website: call for speakers, review and testing.",
+        },
+        {
+          name: "Talks and mentoring",
+          role: "",
+          description: "I give technical talks (Python, retro games) and mentor juniors and students at hackathons.",
+        },
+      ],
     },
     contact: {
-      eyebrow: "Contact",
-      title: "If you want visual quality, accessibility, and technical execution, let's talk.",
-      text: "I work with teams and clients, and I'm open to challenging projects and roles — frontend, full stack, Shopify, or design-dev hybrid. Short or long engagements; remote (preferred), on-site, or hybrid. Spanish and English.",
-      email: "Email",
-      github: "GitHub",
+      title: "I'm looking for a remote Shopify or front-end role.",
+      text: "If your team builds Shopify stores, send me an email. I reply in English or Spanish. I'm also open to on-site or hybrid roles in Puebla.",
+      emailCta: "jlhc1996@gmail.com",
+      cv: "Download CV (PDF)",
       linkedin: "LinkedIn",
-      pytalavera: "PyTalavera",
+      github: "GitHub",
+    },
+    caseStudies: {
+      memoryAir: memoryAirCaseEn,
     },
     theme: {
       toDark: "Enable dark mode",
@@ -465,9 +558,9 @@ export const content = {
       switchToEs: "Cambiar a español",
     },
     meta: {
-      title: "Jorge Hernández — Creative dev · Ecommerce · Accessibility",
+      title: "Jorge Hernández · Shopify Front-End Developer",
       description:
-        "Portfolio of Jorge Hernández: full stack frontend developer, Shopify ecommerce, WCAG accessibility, and community builder in Puebla, Mexico.",
+        "Shopify Front-End Developer in Puebla, Mexico. Custom Online Store 2.0 themes, catalog migrations and WCAG accessibility. Open to remote roles.",
     },
   },
 };
