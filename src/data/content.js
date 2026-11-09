@@ -133,7 +133,7 @@ const skillGroupsEs = [
   {
     id: "backend",
     label: "Backend",
-    items: ["Python", "REST", "SQL"],
+    items: ["Java", "Spring Boot", "Python", "REST", "SQL"],
   },
   {
     id: "plus",
@@ -161,7 +161,7 @@ const skillGroupsEn = [
   {
     id: "backend",
     label: "Backend",
-    items: ["Python", "REST", "SQL"],
+    items: ["Java", "Spring Boot", "Python", "REST", "SQL"],
   },
   {
     id: "plus",
@@ -197,7 +197,7 @@ const servicesColumnsEs = [
     id: "scale",
     title: "Escala & operaciones",
     items: [
-      "REST APIs (Python)",
+      "REST APIs (Java/Spring Boot, Python)",
       "Conectividad CRM / ERP con web y ecommerce",
       "Automatización de datos y scripts de migración",
       "Ownership de proyectos y PM de entregas web",
@@ -232,7 +232,7 @@ const servicesColumnsEn = [
     id: "scale",
     title: "Scale & operations",
     items: [
-      "REST APIs (Python)",
+      "REST APIs (Java/Spring Boot, Python)",
       "CRM / ERP connectivity with web & ecommerce",
       "Data automation & migration scripts",
       "Project ownership & web delivery PM",

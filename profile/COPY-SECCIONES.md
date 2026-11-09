@@ -66,7 +66,7 @@ Como colaborador o como partner en proyecto — desde ecommerce y accesibilidad 
 
 ### Columna 3 — Escala & operaciones
 
-- REST APIs (Python)
+- REST APIs (Java/Spring Boot, Python)
 - Conectividad CRM / ERP con web y ecommerce
 - Automatización de datos y scripts de migración
 - Ownership de proyectos y PM de entregas web
@@ -152,7 +152,7 @@ Invitación web y scoreboard de torneos: interfaces pensadas tanto para quien la
 **Frontend:** React · Tailwind · JavaScript · Responsive · Fidelidad al diseño  
 **Ecommerce:** Shopify · Liquid · Metafields · PDP · Integraciones  
 **Calidad:** WCAG/ADA · SEO · Semantic HTML · ARIA · Auditorías  
-**Backend:** Python · REST · SQL  
+**Backend:** Java · Spring Boot · Python · REST · SQL  
 **Plus:** Git · PM de proyectos web · Community building
 
 ---

@@ -243,7 +243,7 @@ SEO · Accesibilidad WCAG/ADA · Auditorías · Performance · Semantic HTML · 
 
 ### Backend & integraciones
 
-Python · REST APIs · SQL
+Java · Spring Boot · Python · REST APIs · SQL
 
 ### Procesos & liderazgo
 
