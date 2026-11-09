@@ -23,7 +23,7 @@ export default function ServicesSection() {
               key={column.id}
               className="flex flex-col rounded-2xl border border-stone-300 bg-white p-6 shadow-sm dark:border-stone-600 dark:bg-stone-900"
             >
-              <div className="mb-4 inline-flex rounded-lg bg-accent-600 p-2.5 text-white shadow-sm">
+              <div className="mb-4 inline-flex rounded-lg bg-accent-700 p-2.5 text-white shadow-sm">
                 <Icon size={18} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-xl font-semibold text-stone-900 dark:text-stone-50">{column.title}</h3>
@@ -43,7 +43,7 @@ export default function ServicesSection() {
       <div className="rounded-2xl border border-stone-300 bg-stone-100/80 p-6 dark:border-stone-600 dark:bg-stone-900/60">
         <p className="text-sm leading-relaxed text-stone-600 dark:text-stone-400 sm:text-base">{services.footer}</p>
         <div className="mt-4 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
+          <span className="text-xs font-semibold uppercase tracking-wide text-stone-600 dark:text-stone-400">
             {services.rolesLabel}:
           </span>
           {services.roles.map((role) => (
