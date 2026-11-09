@@ -32,7 +32,7 @@ No rechazo etiquetas — más bien no encajo en una sola.
 **Problemas que resuelvo:**
 
 - Mejorar procesos técnicos de equipos
-- Mantener interfaces pixel-perfect, responsivas y creativas
+- Mantener interfaces fieles al diseño, responsivas y creativas
 - Integrar APIs y aplicaciones third party
 - Optimizar SEO y auditar accesibilidad (ADA/WCAG) — áreas que equipos suelen pasar por alto
 - Integrar IA en flujos de trabajo empresariales
@@ -88,7 +88,7 @@ No rechazo etiquetas — más bien no encajo en una sola.
 
 ## Subheadline extendida (About / meta)
 
-Soy Jorge, desarrollador full stack con mentalidad de diseño. Construyo experiencias ecommerce y digitales donde estética, usabilidad, accesibilidad y optimización técnica van juntas — desde interfaces pixel-perfect en Shopify hasta integraciones, SEO y flujos con IA.
+Soy Jorge, desarrollador full stack con mentalidad de diseño. Construyo experiencias ecommerce y digitales donde estética, usabilidad, accesibilidad y optimización técnica van juntas — desde interfaces fieles al diseño en Shopify hasta integraciones, SEO y flujos con IA.
 
 ## Tono del sitio
 

@@ -53,7 +53,7 @@ I'm currently working with teams and clients, and open to challenging projects a
 | **Theme development & customization** | Desarrollo y personalización de themes Shopify (Liquid, sections, snippets, schemas) |
 | **Brand refresh implementation** | Traducir un refresh de identidad — junto al equipo de diseño — a un storefront coherente en producción |
 | **Custom sections & components** | Carousels, store locators, PDP modules, páginas automatizadas — piezas completas, no parches |
-| **Pixel-perfect implementation** | Traducir diseños Figma a storefront responsivo con fidelidad visual |
+| **Implementación fiel al diseño** | Traducir diseños Figma a storefront responsivo con fidelidad visual |
 | **Metafields & metaobjects** | Modelar, migrar y mantener datos custom a escala (Matrixify, scripts, bulk ops) |
 | **PDP & collection optimization** | Mejorar páginas de producto, carruseles, gift sets, bundles, filtros |
 | **Third-party integrations** | Apps, reviews (Junip, etc.), checkout extensions, APIs en storefront |
@@ -175,7 +175,7 @@ I'm currently working with teams and clients, and open to challenging projects a
 Ecommerce Shopify · Landings · Integraciones · Metafields · SEO
 
 ### Calidad & confianza
-Accesibilidad WCAG · Performance · Auditorías · Pixel-perfect
+Accesibilidad WCAG · Performance · Auditorías · Fidelidad al diseño
 
 ### Escala & operaciones
 APIs · CRM/ERP · Automatización · IA en flujos · Migración de datos

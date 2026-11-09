@@ -31,7 +31,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 - Trabajo conjunto con diseño para traducir el refresh de marca a código en producción
 - Secciones completas custom — no solo tweaks: bloques nuevos, layouts modulares, consistencia visual en todo el theme
-- Criterio pixel-perfect entre Figma y Liquid en un catálogo que no perdona inconsistencias
+- Criterio de fidelidad al diseño entre Figma y Liquid en un catálogo que no perdona inconsistencias
 
 **Interfaces & componentes custom**
 
@@ -97,14 +97,14 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 **Qué hice:**
 
-- **37 PRs mergeados** — landing corporativa/narrativa
+- **36 PRs mergeados** — landing corporativa/narrativa
 - Nav sticky, tabs, carousels, cards con transform, animaciones sincronizadas
 - Fixes mobile extensivos (carousel, tabs, border radius, pillars)
 - Tipografía, parallax, secciones Product / People / Purpose / Impact
 
 **Impacto / valor:**
 
-- Ejecución pixel-perfect en marketing site de alto detalle visual
+- Ejecución fiel al diseño en marketing site de alto detalle visual
 - Equilibrio entre creatividad y comportamiento responsive impecable
 
 **Stack:** HTML/CSS/JS (landing custom)
@@ -222,7 +222,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 1. **Savory Spice** — Case study bandera: refresh de marca + secciones custom + carousels + store locator + páginas automatizadas + metafields a escala
 2. **Leaf Shave** — Accesibilidad WCAG en Shopify (diferenciador)
-3. **FIGS Landing** — Creative dev + pixel-perfect
+3. **FIGS Landing** — Creative dev + fidelidad al diseño
 4. **Scoreboard / Invitación** — UX para operadores y usuarios (card combinada o dos cards más pequeñas)
 
 ---
@@ -231,7 +231,7 @@ Rol: desarrollo frontend / Shopify Liquid · colaboración con diseño y backend
 
 ### Frontend & UI
 
-React · JavaScript · Tailwind CSS · Responsive design · Pixel-perfect implementation · Microinteracciones
+React · JavaScript · Tailwind CSS · Responsive design · Implementación fiel al diseño · Microinteracciones
 
 ### Ecommerce
 

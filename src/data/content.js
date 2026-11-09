@@ -52,9 +52,9 @@ const projectsEs = [
     id: "figs-landing",
     title: "FIGS Landing — Creative dev",
     description:
-      "Landing corporativa con nav sticky, carousels, cards animadas y docena de fixes mobile. Creatividad visual con ejecución pixel-perfect.",
+      "Landing corporativa con nav sticky, carousels, cards animadas y docena de fixes mobile. Creatividad visual con ejecución fiel al diseño.",
     stack: ["HTML", "CSS", "JavaScript"],
-    impact: "37 PRs mergeados — detalle en cada breakpoint",
+    impact: "36 PRs mergeados — detalle en cada breakpoint",
     barClass: "bg-vibe-500",
   },
   {
@@ -98,9 +98,9 @@ const projectsEn = [
     id: "figs-landing",
     title: "FIGS Landing — Creative dev",
     description:
-      "Corporate landing with sticky nav, carousels, animated cards, and extensive mobile fixes. Visual creativity with pixel-perfect execution.",
+      "Corporate landing with sticky nav, carousels, animated cards, and extensive mobile fixes. Visual creativity with execution faithful to the design.",
     stack: ["HTML", "CSS", "JavaScript"],
-    impact: "37 merged PRs — detail at every breakpoint",
+    impact: "36 merged PRs — detail at every breakpoint",
     barClass: "bg-vibe-500",
   },
   {
@@ -118,7 +118,7 @@ const skillGroupsEs = [
   {
     id: "frontend",
     label: "Frontend",
-    items: ["React", "Tailwind", "JavaScript", "Responsive", "Pixel-perfect"],
+    items: ["React", "Tailwind", "JavaScript", "Responsive", "Fidelidad al diseño"],
   },
   {
     id: "ecommerce",
@@ -146,7 +146,7 @@ const skillGroupsEn = [
   {
     id: "frontend",
     label: "Frontend",
-    items: ["React", "Tailwind", "JavaScript", "Responsive", "Pixel-perfect"],
+    items: ["React", "Tailwind", "JavaScript", "Responsive", "Design fidelity"],
   },
   {
     id: "ecommerce",
@@ -176,7 +176,7 @@ const servicesColumnsEs = [
     title: "Negocio digital",
     items: [
       "Desarrollo y customización de themes Shopify",
-      "Landings y storefronts pixel-perfect",
+      "Landings y storefronts fieles al diseño",
       "Metafields, metaobjects y migración de catálogos a escala",
       "Integraciones con apps, CRMs y APIs third-party",
       "SEO técnico y optimización de performance",
@@ -212,7 +212,7 @@ const servicesColumnsEn = [
     title: "Digital business",
     items: [
       "Shopify theme development & customization",
-      "Pixel-perfect landings & storefronts",
+      "Landings & storefronts faithful to the design",
       "Metafields, metaobjects & catalog migration at scale",
       "App, CRM & third-party API integrations",
       "Technical SEO & performance optimization",
@@ -317,7 +317,7 @@ export const content = {
       title: "Diseño, código y criterio para quien lo usa",
       text: "No encajo en una sola etiqueta: soy full stack con tendencia a frontend, creative dev en lo visual y community builder en Puebla. Antes de escribir código me pregunto quién lo va a usar, cómo se puede ver mejor y cómo sorprender sin sacrificar lo funcional.",
       pillars: [
-        { text: "Calidad visual consistente — pixel-perfect y responsivo en producción", variant: "default" },
+        { text: "Calidad visual consistente — fiel al diseño y responsivo en producción", variant: "default" },
         { text: "Accesibilidad que importa — WCAG/ADA en ecommerce real, no solo en teoría", variant: "accent" },
         { text: "Procesos que escalan — metafields, integraciones y optimización continua", variant: "default" },
       ],
@@ -402,7 +402,7 @@ export const content = {
       title: "Design, code, and judgment for the people who use it",
       text: "I don't fit a single label: I'm full stack with a frontend lean, a creative dev visually, and a community builder in Puebla. Before writing code I ask who will use it, how it can look better, and how to surprise without sacrificing function.",
       pillars: [
-        { text: "Consistent visual quality — pixel-perfect and responsive in production", variant: "default" },
+        { text: "Consistent visual quality — faithful to the design and responsive in production", variant: "default" },
         { text: "Accessibility that matters — WCAG/ADA in real ecommerce, not just theory", variant: "accent" },
         { text: "Processes that scale — metafields, integrations, and continuous optimization", variant: "default" },
       ],
