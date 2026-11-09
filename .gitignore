@@ -8,3 +8,4 @@ profile/github-export
 .cursor
 __pycache__
 *.pyc
+.impeccable/review

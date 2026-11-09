@@ -1,8 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/archivo-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/archivo-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/atkinson-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/atkinson-600.woff2") format("woff2");
+}
 
 :root {
   color-scheme: light;
@@ -12,43 +42,41 @@ html.dark {
   color-scheme: dark;
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
   background-color: #fafaf9;
-  background-image: radial-gradient(1200px 600px at 85% -10%, rgba(16, 185, 129, 0.06), transparent 55%);
-  background-attachment: fixed;
 }
 
 html.dark body {
   background-color: #0c0a09;
-  background-image: radial-gradient(1200px 600px at 85% -10%, rgba(16, 185, 129, 0.1), transparent 55%);
 }
 
-/* Marquee continuo (debajo del hero). translateX(-50%) = una copia del contenido duplicado. */
-@keyframes portfolio-marquee {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
+::selection {
+  background: #a7f3d0;
+  color: #022c22;
 }
 
-.portfolio-marquee__track {
-  display: flex;
-  width: max-content;
-  animation: portfolio-marquee 32s linear infinite;
-  will-change: transform;
+html.dark ::selection {
+  background: #065f46;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .portfolio-marquee__track {
-    animation: none;
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p,
+li,
+dd {
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 

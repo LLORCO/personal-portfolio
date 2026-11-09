@@ -1,45 +1,28 @@
-import { Cpu, Palette, ServerCog, ShieldCheck, ShoppingBag, Sparkles } from "lucide-react";
 import { useContent } from "../../hooks/useContent";
-import SectionTitle from "../ui/SectionTitle";
-
-const icons = {
-  frontend: Palette,
-  ecommerce: ShoppingBag,
-  quality: ShieldCheck,
-  backend: ServerCog,
-  plus: Sparkles,
-  tools: Cpu,
-};
 
 export default function SkillsSection() {
   const { skills } = useContent();
 
   return (
-    <section className="space-y-10 py-14 sm:space-y-12 sm:py-20">
-      <SectionTitle eyebrow={skills.eyebrow} title={skills.title} text={skills.text} />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {skills.groups.map(({ id, label, items }) => {
-          const Icon = icons[id] || Cpu;
-          return (
-            <article key={id} className="rounded-2xl border border-stone-300 bg-white p-6 shadow-sm dark:border-stone-600 dark:bg-stone-900">
-              <div className="mb-4 inline-flex rounded-lg bg-accent-700 p-2.5 text-white shadow-sm">
-                <Icon size={18} aria-hidden="true" />
-              </div>
-              <h3 className="font-heading text-xl font-semibold text-stone-900 dark:text-stone-50">{label}</h3>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {items.map((skill) => (
-                  <li
-                    key={skill}
-                    className="rounded-md border border-stone-300 bg-stone-100 px-2.5 py-1 text-xs font-medium text-stone-800 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-200"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          );
-        })}
-      </div>
+    <section
+      id="tools"
+      aria-labelledby="tools-title"
+      className="scroll-mt-24 border-t border-stone-200 py-14 dark:border-stone-800 sm:py-20"
+    >
+      <h2
+        id="tools-title"
+        className="font-heading text-3xl font-bold tracking-[-0.02em] text-stone-950 dark:text-stone-50 sm:text-4xl"
+      >
+        {skills.title}
+      </h2>
+      <dl className="mt-8 divide-y divide-stone-200 border-y border-stone-200 dark:divide-stone-800 dark:border-stone-800">
+        {skills.groups.map((group) => (
+          <div key={group.label} className="grid gap-2 py-4 sm:grid-cols-[12rem_1fr]">
+            <dt className="font-heading font-semibold text-stone-900 dark:text-stone-50">{group.label}</dt>
+            <dd className="text-stone-700 dark:text-stone-300">{group.items}</dd>
+          </div>
+        ))}
+      </dl>
     </section>
   );
 }
