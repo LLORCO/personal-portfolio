@@ -2,6 +2,7 @@ import "../../styles/projects-motion.css";
 import { useContent } from "../../hooks/useContent";
 import FigsCard from "../projects/FigsCard";
 import MemoryAirCard from "../projects/MemoryAirCard";
+import ProjectPicture from "../projects/ProjectPicture";
 import TextsReveal from "../projects/TextsReveal";
 
 export default function ProjectsSection() {
@@ -26,10 +27,30 @@ export default function ProjectsSection() {
                 key={item.title}
                 className="border-t-2 border-moss-950/15 py-3.5 first:pt-3.5 dark:border-mint-200/25"
               >
-                <h3 className="font-heading text-xl font-bold tracking-tight text-moss-950 dark:text-stone-50">
-                  {item.title}
-                </h3>
-                <p className="mt-1 text-[0.98rem] leading-snug text-stone-700 dark:text-stone-300">{item.text}</p>
+                <div
+                  className={
+                    item.preview
+                      ? "flex flex-col gap-2.5 sm:flex-row sm:items-start sm:gap-3"
+                      : undefined
+                  }
+                >
+                  {item.preview ? (
+                    <div className="h-[60px] w-24 shrink-0 overflow-hidden rounded">
+                      <ProjectPicture
+                        preview={item.preview}
+                        className="h-full w-full object-cover object-top"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="min-w-0">
+                    <h3 className="font-heading text-xl font-bold tracking-tight text-moss-950 dark:text-stone-50">
+                      {item.title}
+                    </h3>
+                    <p className="mt-1 text-[0.98rem] leading-snug text-stone-700 dark:text-stone-300">
+                      {item.text}
+                    </p>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>

@@ -258,6 +258,13 @@ export const content = {
         cta: "Ver sitio en vivo",
         url: "https://memoryair.com",
         host: "memoryair.com",
+        preview: {
+          avif: "/projects/memory-air.avif",
+          webp: "/projects/memory-air.webp",
+          width: 1120,
+          height: 700,
+          alt: "Página de inicio de Memory Air",
+        },
       },
       figs: {
         title: "FIGS",
@@ -265,11 +272,27 @@ export const content = {
         count: 36,
         countLabel: "PRs fusionados",
         note: "Landing estática a partir de un diseño en Figma.",
+        cta: "Ver sitio en vivo",
+        url: "https://www.wearfigs.com/pages/impact-report",
+        preview: {
+          avif: "/projects/figs.avif",
+          webp: "/projects/figs.webp",
+          width: 800,
+          height: 500,
+          alt: "Página Impact Report de FIGS",
+        },
       },
       others: [
         {
           title: "Savory Spice",
           text: "Desarrollador en el refresh de identidad: construí el store locator y los gift sets.",
+          preview: {
+            avif: "/projects/savory-spice.avif",
+            webp: "/projects/savory-spice.webp",
+            width: 192,
+            height: 120,
+            alt: "Página de inicio de Savory Spice",
+          },
         },
         {
           title: "Leaf Shave",
@@ -374,6 +397,13 @@ export const content = {
         cta: "View live site",
         url: "https://memoryair.com",
         host: "memoryair.com",
+        preview: {
+          avif: "/projects/memory-air.avif",
+          webp: "/projects/memory-air.webp",
+          width: 1120,
+          height: 700,
+          alt: "Memory Air home page",
+        },
       },
       figs: {
         title: "FIGS",
@@ -381,11 +411,27 @@ export const content = {
         count: 36,
         countLabel: "merged PRs",
         note: "Static landing from a Figma design.",
+        cta: "View live site",
+        url: "https://www.wearfigs.com/pages/impact-report",
+        preview: {
+          avif: "/projects/figs.avif",
+          webp: "/projects/figs.webp",
+          width: 800,
+          height: 500,
+          alt: "FIGS Impact Report page",
+        },
       },
       others: [
         {
           title: "Savory Spice",
           text: "Developer on the identity refresh: I built the store locator and the gift sets.",
+          preview: {
+            avif: "/projects/savory-spice.avif",
+            webp: "/projects/savory-spice.webp",
+            width: 192,
+            height: 120,
+            alt: "Savory Spice home page",
+          },
         },
         {
           title: "Leaf Shave",

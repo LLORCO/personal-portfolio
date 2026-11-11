@@ -1,7 +1,9 @@
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useId, useLayoutEffect, useState } from "react";
 import { useDesktopInitialOpen } from "../../hooks/useDesktopMedia";
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
+import LiveSiteLink from "./LiveSiteLink";
+import ProjectPicture from "./ProjectPicture";
 
 const DETAILS_ID = "memory-air-details";
 
@@ -44,18 +46,23 @@ export default function MemoryAirCard({ featured }) {
       >
         <div className="t-resize-clip">
           <div className="card-ma-details-inner">
-            <p className="mt-4 max-w-2xl text-[1.02rem] leading-normal text-mint-50">{featured.case}</p>
+            <figure className="mt-4 overflow-hidden rounded-[14px] bg-moss-950 p-2.5 ring-1 ring-white/15">
+              <div className="mb-2 flex items-center gap-1.5 px-1.5" aria-hidden="true">
+                <span className="h-[9px] w-[9px] rounded-full bg-vibe-400" />
+                <span className="h-[9px] w-[9px] rounded-full bg-mint-200/40" />
+                <span className="h-[9px] w-[9px] rounded-full bg-mint-200/40" />
+                <span className="ml-2.5 text-sm text-mint-200">{featured.host}</span>
+              </div>
+              <ProjectPicture
+                preview={featured.preview}
+                className="block h-auto w-full rounded-[8px]"
+              />
+            </figure>
+            <p className="mt-3.5 max-w-2xl text-[1.02rem] leading-normal text-mint-50">{featured.case}</p>
             <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
-              <a
-                href={featured.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-vibe-400 px-5 py-[11px] text-[0.95rem] font-semibold text-moss-950 transition-colors duration-150 hover:bg-vibe-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vibe-300"
-                tabIndex={open ? undefined : -1}
-              >
+              <LiveSiteLink href={featured.url} tabIndex={open ? undefined : -1}>
                 {featured.cta}
-                <ArrowUpRight size={16} aria-hidden="true" />
-              </a>
+              </LiveSiteLink>
               <a
                 href={featured.url}
                 target="_blank"

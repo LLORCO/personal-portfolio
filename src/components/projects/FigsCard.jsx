@@ -1,5 +1,7 @@
 import { useInViewOnce } from "../../hooks/useInViewOnce";
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
+import LiveSiteLink from "./LiveSiteLink";
+import ProjectPicture from "./ProjectPicture";
 import SpinningCounter from "./SpinningCounter";
 
 export default function FigsCard({ figs }) {
@@ -11,6 +13,10 @@ export default function FigsCard({ figs }) {
       ref={ref}
       className="rounded-2xl border border-moss-950/15 bg-white px-6 py-7 sm:px-8 sm:py-[26px] dark:border-white/10 dark:bg-stone-900"
     >
+      <ProjectPicture
+        preview={figs.preview}
+        className="mb-4 aspect-[16/10] h-auto w-full rounded-[8px] object-cover object-top"
+      />
       <h3 className="font-heading text-[1.85rem] font-bold leading-tight tracking-tight text-moss-950 sm:text-[2.15rem] dark:text-stone-50">
         {figs.title}
       </h3>
@@ -20,6 +26,11 @@ export default function FigsCard({ figs }) {
       </div>
       <p className="text-base font-semibold text-moss-950 dark:text-mint-100">{figs.countLabel}</p>
       <p className="mt-1.5 text-[0.98rem] leading-snug text-stone-700 dark:text-stone-300">{figs.note}</p>
+      <div className="mt-4">
+        <LiveSiteLink href={figs.url} tone="light">
+          {figs.cta}
+        </LiveSiteLink>
+      </div>
     </article>
   );
 }
