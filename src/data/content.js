@@ -22,98 +22,6 @@ export const marqueeTokens = [
   "COMMUNITY",
 ];
 
-const projectsEs = [
-  {
-    id: "savory-spice",
-    title: "Savory Spice — Refresh de marca a escala",
-    description:
-      "Colaboré con diseño en el refresco de identidad de Savory Spice y construí secciones completas del theme Shopify: carousels custom, store locator, PDP avanzados, páginas automatizadas y migración de metafields para un catálogo de 400+ productos. El proyecto donde convergen casi todas mis habilidades de interfaz.",
-    stack: ["Shopify", "Liquid", "JavaScript", "Python", "Matrixify", "Figma"],
-    impact: "Storefront renovado que la marca puede presumir",
-    barClass: "bg-moss-800",
-    featured: true,
-    url: "https://www.savoryspiceshop.com",
-    highlights: [
-      "Refresh de identidad con equipo de diseño",
-      "Store locator · carousels · recipe cards · gift sets",
-      "Páginas automatizadas y metafields a gran escala",
-    ],
-  },
-  {
-    id: "leaf-shave",
-    title: "Leaf Shave — Accesibilidad en producción",
-    description:
-      "Serie de mejoras WCAG/ADA en theme Shopify: cart live regions, jerarquía de headings, alt text, landmarks ARIA y correcciones semánticas auditables.",
-    stack: ["Shopify", "Liquid", "WCAG", "ARIA"],
-    impact: "Experiencia inclusiva y riesgo legal reducido",
-    barClass: "bg-accent-500",
-  },
-  {
-    id: "figs-landing",
-    title: "FIGS Landing — Creative dev",
-    description:
-      "Landing corporativa con nav sticky, carousels, cards animadas y docena de fixes mobile. Creatividad visual con ejecución fiel al diseño.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    impact: "36 PRs mergeados — detalle en cada breakpoint",
-    barClass: "bg-vibe-500",
-  },
-  {
-    id: "side-projects",
-    title: "Side projects — UX para operadores",
-    description:
-      "Invitación web y scoreboard de torneos: interfaces pensadas tanto para quien las usa como para quien las opera — claras, accesibles y sin fricción.",
-    stack: ["React", "Vite", "Tailwind", "Python"],
-    impact: "Experiencia memorable en contextos reales",
-    barClass: "bg-stone-600",
-  },
-];
-
-const projectsEn = [
-  {
-    id: "savory-spice",
-    title: "Savory Spice — Brand refresh at scale",
-    description:
-      "Partnered with design on Savory Spice's brand refresh and built complete Shopify theme sections: custom carousels, store locator, advanced PDPs, automated pages, and metafield migration for a 400+ product catalog. The project where nearly all my interface skills converge.",
-    stack: ["Shopify", "Liquid", "JavaScript", "Python", "Matrixify", "Figma"],
-    impact: "A renewed storefront the brand can be proud of",
-    barClass: "bg-moss-800",
-    featured: true,
-    url: "https://www.savoryspiceshop.com",
-    highlights: [
-      "Brand refresh with the design team",
-      "Store locator · carousels · recipe cards · gift sets",
-      "Automated pages and metafields at scale",
-    ],
-  },
-  {
-    id: "leaf-shave",
-    title: "Leaf Shave — Accessibility in production",
-    description:
-      "WCAG/ADA improvements across a Shopify theme: cart live regions, heading hierarchy, alt text, ARIA landmarks, and auditable semantic fixes.",
-    stack: ["Shopify", "Liquid", "WCAG", "ARIA"],
-    impact: "Inclusive experience and reduced legal risk",
-    barClass: "bg-accent-500",
-  },
-  {
-    id: "figs-landing",
-    title: "FIGS Landing — Creative dev",
-    description:
-      "Corporate landing with sticky nav, carousels, animated cards, and extensive mobile fixes. Visual creativity with execution faithful to the design.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    impact: "36 merged PRs — detail at every breakpoint",
-    barClass: "bg-vibe-500",
-  },
-  {
-    id: "side-projects",
-    title: "Side projects — UX for operators",
-    description:
-      "Wedding invitation site and tournament scoreboard: interfaces designed for both end users and the people who run them — clear, accessible, friction-free.",
-    stack: ["React", "Vite", "Tailwind", "Python"],
-    impact: "Memorable experience in real-world contexts",
-    barClass: "bg-stone-600",
-  },
-];
-
 const skillGroupsEs = [
   {
     id: "frontend",
@@ -337,12 +245,35 @@ export const content = {
       roles: roleChipsEs,
     },
     projects: {
-      eyebrow: "Projects",
-      title: "Trabajo reciente con impacto real",
-      text: "Desde un refresh de marca en Shopify hasta accesibilidad en producción y side projects con UX pensada para operadores.",
-      featuredLabel: "Proyecto destacado",
-      visitSite: "Ver sitio",
-      projects: projectsEs,
+      title: "Proyectos seleccionados",
+      text: "Temas Shopify y landings que construí y puedo mostrar.",
+      featured: {
+        kicker: "Caso destacado",
+        title: "Memory Air",
+        role: "Shopify Front-End",
+        lede: "Tema Online Store 2.0 a medida, partiendo de wireframes de baja fidelidad.",
+        case: "Los wireframes originales eran poco claros. Propuse el video con scroll, las tarjetas flip y los contadores animados, y el cliente los aprobó.",
+        cta: "Ver sitio en vivo",
+        url: "https://memoryair.com",
+        host: "memoryair.com",
+      },
+      figs: {
+        title: "FIGS",
+        role: "Landing en HTML, CSS y JS",
+        count: 36,
+        countLabel: "PRs fusionados",
+        note: "Landing estática a partir de un diseño en Figma.",
+      },
+      others: [
+        {
+          title: "Savory Spice",
+          text: "Desarrollador en el refresh de identidad: construí el store locator y los gift sets.",
+        },
+        {
+          title: "Leaf Shave",
+          text: "Auditoría WCAG y corrección de todo lo que dependía del código.",
+        },
+      ],
     },
     skills: {
       eyebrow: "Skills",
@@ -428,12 +359,35 @@ export const content = {
       roles: roleChipsEn,
     },
     projects: {
-      eyebrow: "Projects",
-      title: "Recent work with real impact",
-      text: "From a Shopify brand refresh to production accessibility and side projects with operator-first UX.",
-      featuredLabel: "Featured project",
-      visitSite: "Visit site",
-      projects: projectsEn,
+      title: "Selected projects",
+      text: "Shopify themes and landings I built and can show.",
+      featured: {
+        kicker: "Featured case",
+        title: "Memory Air",
+        role: "Shopify Front-End",
+        lede: "Custom Online Store 2.0 theme, starting from low-fidelity wireframes.",
+        case: "The original wireframes were unclear. I proposed the scroll video, the flip cards, and the animated counters, and the client approved them.",
+        cta: "View live site",
+        url: "https://memoryair.com",
+        host: "memoryair.com",
+      },
+      figs: {
+        title: "FIGS",
+        role: "Landing in HTML, CSS and JS",
+        count: 36,
+        countLabel: "merged PRs",
+        note: "Static landing from a Figma design.",
+      },
+      others: [
+        {
+          title: "Savory Spice",
+          text: "Developer on the identity refresh: I built the store locator and the gift sets.",
+        },
+        {
+          title: "Leaf Shave",
+          text: "WCAG audit and fixes for everything that depended on code.",
+        },
+      ],
     },
     skills: {
       eyebrow: "Skills",

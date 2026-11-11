@@ -47,6 +47,16 @@ export default {
         heading: ["Archivo", "sans-serif"],
         body: ["Space Grotesk", "sans-serif"],
       },
+      transitionDuration: {
+        resize: "var(--resize-dur)",
+        reveal: "var(--stagger-dur)",
+      },
+      transitionTimingFunction: {
+        "out-quart": "var(--resize-ease)",
+      },
+      transitionDelay: {
+        stagger: "var(--stagger-stagger)",
+      },
       keyframes: {
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
