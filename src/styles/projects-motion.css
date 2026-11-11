@@ -1,0 +1,147 @@
+/* Card resize, Texts reveal and Spinning counter adapted from
+   the free library at transitions.dev. Terms: https://transitions.dev/terms.html */
+
+:root {
+  --resize-dur: 400ms;
+  --resize-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --stagger-dur: 500ms;
+  --stagger-distance: 12px;
+  --stagger-stagger: 40ms;
+  --stagger-blur: 3px;
+  --stagger-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --reel-step-dur: 130ms;
+  --reel-stagger: 90ms;
+  --reel-ease: cubic-bezier(0.35, -0.02, 0.43, 1);
+  --reel-cell: 1.2em;
+  --reel-side-scale: 0.7;
+  --reel-side-offset: 0.52em;
+  --reel-side-blur: max(0.067em, 0.171em - 2.1px);
+  --reel-side-opacity: 0.17;
+  --reel-center-scale: 0.9;
+  --reel-center-blur: 0.042em;
+  --reel-antic-dur: 100ms;
+  --reel-antic-scale: 0.94;
+  --reel-antic-lift: 0.125em;
+  --reel-land-dur: 740ms;
+  --reel-land-peak: 1.03;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .t-stagger-line {
+    opacity: 0;
+    transform: translateY(var(--stagger-distance));
+    filter: blur(var(--stagger-blur));
+    transition:
+      opacity var(--stagger-dur) var(--stagger-ease),
+      transform var(--stagger-dur) var(--stagger-ease),
+      filter var(--stagger-dur) var(--stagger-ease);
+  }
+
+  .t-stagger-line--2 {
+    transition-delay: var(--stagger-stagger);
+  }
+
+  .t-stagger.is-shown .t-stagger-line {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.t-resize-details {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+.t-resize-details.is-open {
+  grid-template-rows: 1fr;
+}
+
+.t-resize-clip {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.card-ma-chevron {
+  transform: rotate(0deg);
+}
+
+.card-ma-chevron-open {
+  transform: rotate(180deg);
+}
+
+.card-ma-details-inner {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+.t-resize-details.is-open .card-ma-details-inner {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .t-resize.is-ready .t-resize-details {
+    transition: grid-template-rows var(--resize-dur) var(--resize-ease);
+  }
+
+  .t-resize.is-ready .card-ma-details-inner {
+    transition:
+      opacity var(--resize-dur) var(--resize-ease),
+      transform var(--resize-dur) var(--resize-ease);
+  }
+
+  .t-resize.is-ready .card-ma-chevron {
+    transition: transform var(--resize-dur) var(--resize-ease);
+  }
+}
+
+.t-reel {
+  display: inline-flex;
+  align-items: center;
+  height: var(--reel-cell);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.t-reel-col {
+  position: relative;
+  display: inline-block;
+  height: var(--reel-cell);
+  line-height: var(--reel-cell);
+}
+
+.t-reel-sizer {
+  visibility: hidden;
+}
+
+.t-reel-digit {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-reel-sep {
+  display: inline-block;
+  height: var(--reel-cell);
+  line-height: var(--reel-cell);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t-stagger-line,
+  .card-ma-details-inner,
+  .t-reel-digit {
+    filter: none !important;
+  }
+
+  .t-resize-details,
+  .t-stagger-line,
+  .card-ma-details-inner,
+  .card-ma-chevron {
+    transition: none !important;
+  }
+}
