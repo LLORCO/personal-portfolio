@@ -11,11 +11,11 @@ export default function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
         <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
           <img
-            src="/monogram.svg"
+            src="/favicon.svg"
             alt={`Monograma de ${personal.fullName}`}
             width={48}
             height={48}
-            className="h-10 w-10 shrink-0 rounded-xl object-contain ring-1 ring-stone-200 dark:ring-stone-700 sm:h-11 sm:w-11"
+            className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
           />
           <div className="min-w-0">
             <p className="truncate font-heading text-base font-semibold tracking-tight text-stone-900 dark:text-stone-50 sm:text-lg">
