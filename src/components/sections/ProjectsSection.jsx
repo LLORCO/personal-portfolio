@@ -1,6 +1,7 @@
 import "../../styles/projects-motion.css";
 import { useContent } from "../../hooks/useContent";
 import FigsCard from "../projects/FigsCard";
+import LiveSiteLink from "../projects/LiveSiteLink";
 import MemoryAirCard from "../projects/MemoryAirCard";
 import ProjectPicture from "../projects/ProjectPicture";
 import TextsReveal from "../projects/TextsReveal";
@@ -27,18 +28,12 @@ export default function ProjectsSection() {
                 key={item.title}
                 className="border-t-2 border-moss-950/15 py-3.5 first:pt-3.5 dark:border-mint-200/25"
               >
-                <div
-                  className={
-                    item.preview
-                      ? "flex flex-col gap-2.5 sm:flex-row sm:items-start sm:gap-3"
-                      : undefined
-                  }
-                >
+                <div className="flex flex-col gap-2.5 sm:flex-row sm:items-start sm:gap-3">
                   {item.preview ? (
                     <div className="h-[60px] w-24 shrink-0 overflow-hidden rounded">
                       <ProjectPicture
                         preview={item.preview}
-                        className="h-full w-full object-cover object-top"
+                        className="h-full w-full object-cover object-left-top"
                       />
                     </div>
                   ) : null}
@@ -49,6 +44,13 @@ export default function ProjectsSection() {
                     <p className="mt-1 text-[0.98rem] leading-snug text-stone-700 dark:text-stone-300">
                       {item.text}
                     </p>
+                    {item.url ? (
+                      <div className="mt-2">
+                        <LiveSiteLink href={item.url} variant="text">
+                          {item.host}
+                        </LiveSiteLink>
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               </li>

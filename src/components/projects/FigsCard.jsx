@@ -27,7 +27,7 @@ export default function FigsCard({ figs }) {
       <p className="text-base font-semibold text-moss-950 dark:text-mint-100">{figs.countLabel}</p>
       <p className="mt-1.5 text-[0.98rem] leading-snug text-stone-700 dark:text-stone-300">{figs.note}</p>
       <div className="mt-4">
-        <LiveSiteLink href={figs.url} tone="light">
+        <LiveSiteLink href={figs.url} variant="text">
           {figs.cta}
         </LiveSiteLink>
       </div>

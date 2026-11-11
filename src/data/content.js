@@ -286,6 +286,8 @@ export const content = {
         {
           title: "Savory Spice",
           text: "Desarrollador en el refresh de identidad: construí el store locator y los gift sets.",
+          url: "https://www.savoryspiceshop.com",
+          host: "savoryspiceshop.com",
           preview: {
             avif: "/projects/savory-spice.avif",
             webp: "/projects/savory-spice.webp",
@@ -297,6 +299,15 @@ export const content = {
         {
           title: "Leaf Shave",
           text: "Auditoría WCAG y corrección de todo lo que dependía del código.",
+          url: "https://leafshave.com",
+          host: "leafshave.com",
+          preview: {
+            avif: "/projects/leaf-shave.avif",
+            webp: "/projects/leaf-shave.webp",
+            width: 192,
+            height: 120,
+            alt: "Página de inicio de Leaf Shave",
+          },
         },
       ],
     },
@@ -425,6 +436,8 @@ export const content = {
         {
           title: "Savory Spice",
           text: "Developer on the identity refresh: I built the store locator and the gift sets.",
+          url: "https://www.savoryspiceshop.com",
+          host: "savoryspiceshop.com",
           preview: {
             avif: "/projects/savory-spice.avif",
             webp: "/projects/savory-spice.webp",
@@ -436,6 +449,15 @@ export const content = {
         {
           title: "Leaf Shave",
           text: "WCAG audit and fixes for everything that depended on code.",
+          url: "https://leafshave.com",
+          host: "leafshave.com",
+          preview: {
+            avif: "/projects/leaf-shave.avif",
+            webp: "/projects/leaf-shave.webp",
+            width: 192,
+            height: 120,
+            alt: "Leaf Shave home page",
+          },
         },
       ],
     },
