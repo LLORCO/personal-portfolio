@@ -15,7 +15,7 @@ export default function ProjectsSection() {
     >
       <TextsReveal titleId="projects-title" title={projects.title} text={projects.text} />
 
-      <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.9fr)]">
+      <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.9fr)]">
         <MemoryAirCard featured={projects.featured} />
 
         <div className="flex min-w-0 flex-col gap-4">
