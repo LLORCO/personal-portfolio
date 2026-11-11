@@ -1,32 +1,30 @@
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import { useId, useState } from "react";
+import { useId, useLayoutEffect, useState } from "react";
+import { useDesktopInitialOpen } from "../../hooks/useDesktopMedia";
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 
 const DETAILS_ID = "memory-air-details";
 
 export default function MemoryAirCard({ featured }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useDesktopInitialOpen();
+  const [ready, setReady] = useState(false);
   const reducedMotion = usePrefersReducedMotion();
   const labelId = useId();
-  const seeCaseId = useId();
+
+  useLayoutEffect(() => {
+    setReady(true);
+  }, []);
+
+  const toggleLabel = open ? featured.hideCase : featured.seeCase;
 
   return (
     <article
-      className={`t-resize card-ma flex min-w-0 flex-col overflow-hidden rounded-2xl bg-moss-950 p-6 text-mint-50 ring-1 ring-white/10 sm:px-8 sm:py-6 dark:ring-vibe-400/20 ${
-        open ? "is-open h-auto self-start" : "h-full self-stretch"
-      }`}
+      className={`t-resize card-ma flex min-w-0 flex-col self-start overflow-hidden rounded-2xl bg-moss-950 p-6 text-mint-50 ring-1 ring-white/10 sm:px-8 sm:py-6 dark:ring-vibe-400/20 ${
+        open ? "is-open" : ""
+      } ${ready ? "is-ready" : ""}`}
       aria-labelledby={labelId}
     >
-      <button
-        type="button"
-        className={`flex w-full cursor-pointer flex-col bg-transparent p-0 text-left text-inherit focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-vibe-400 ${
-          open ? "" : "lg:flex-1"
-        }`}
-        aria-expanded={open}
-        aria-controls={DETAILS_ID}
-        aria-labelledby={`${labelId} ${seeCaseId}`}
-        onClick={() => setOpen((current) => !current)}
-      >
+      <header>
         <p className="text-sm font-semibold text-mint-200">{featured.kicker}</p>
         <h3
           id={labelId}
@@ -36,22 +34,7 @@ export default function MemoryAirCard({ featured }) {
         </h3>
         <p className="mt-2 text-[0.95rem] font-semibold text-mint-50">{featured.role}</p>
         <p className="mt-1.5 max-w-xl text-[1.02rem] leading-snug text-mint-200">{featured.lede}</p>
-        <span
-          className={`inline-flex items-center gap-2 text-sm font-semibold text-mint-100 ${
-            open ? "mt-5" : "mt-5 lg:mt-auto lg:pt-8"
-          }`}
-        >
-          <ChevronDown
-            size={18}
-            strokeWidth={2.25}
-            aria-hidden="true"
-            className={`shrink-0 ${reducedMotion ? "" : "card-ma-chevron"} ${
-              open ? "card-ma-chevron-open" : ""
-            }`}
-          />
-          <span id={seeCaseId}>{featured.seeCase}</span>
-        </span>
-      </button>
+      </header>
 
       <div
         id={DETAILS_ID}
@@ -86,6 +69,24 @@ export default function MemoryAirCard({ featured }) {
           </div>
         </div>
       </div>
+
+      <button
+        type="button"
+        className="mt-4 inline-flex w-fit cursor-pointer items-center gap-2 bg-transparent p-0 text-sm font-semibold text-mint-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-vibe-400"
+        aria-expanded={open}
+        aria-controls={DETAILS_ID}
+        onClick={() => setOpen((current) => !current)}
+      >
+        <ChevronDown
+          size={18}
+          strokeWidth={2.25}
+          aria-hidden="true"
+          className={`shrink-0 ${reducedMotion ? "" : "card-ma-chevron"} ${
+            open ? "card-ma-chevron-open" : ""
+          }`}
+        />
+        {toggleLabel}
+      </button>
     </article>
   );
 }

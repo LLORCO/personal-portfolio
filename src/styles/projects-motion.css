@@ -70,27 +70,30 @@
   transform: rotate(180deg);
 }
 
+.card-ma-details-inner {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+.t-resize-details.is-open .card-ma-details-inner {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .t-resize-details {
+  .t-resize.is-ready .t-resize-details {
     transition: grid-template-rows var(--resize-dur) var(--resize-ease);
   }
 
-  .card-ma-details-inner {
-    opacity: 0;
-    transform: translateY(8px);
-    pointer-events: none;
+  .t-resize.is-ready .card-ma-details-inner {
     transition:
       opacity var(--resize-dur) var(--resize-ease),
       transform var(--resize-dur) var(--resize-ease);
   }
 
-  .t-resize-details.is-open .card-ma-details-inner {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .card-ma-chevron {
+  .t-resize.is-ready .card-ma-chevron {
     transition: transform var(--resize-dur) var(--resize-ease);
   }
 }
